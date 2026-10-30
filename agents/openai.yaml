@@ -1,0 +1,4 @@
+interface:
+  display_name: "CommitComic"
+  short_description: "Turn real code changes into shareable comic updates"
+  default_prompt: "Use $commit-comic to turn my recent code changes into an evidence-linked comic and a release post."

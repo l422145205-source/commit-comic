@@ -1,0 +1,57 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "595c552c111a138c28347068a29ec7cba8219acb217bd13cb06f0aa34f2e41a1",
+  "edition": "demo-en",
+  "locale": "en",
+  "theme": "pop",
+  "title": "One retry. Two notes. What happened?",
+  "subtitle": "MoonNotes / a repair story with traceable evidence",
+  "notice": "Original synthetic Git demo; actual tool outputs.",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "Double trouble",
+      "bubble": "I only clicked retry!",
+      "caption": "The previous importer appended a second note on replay.",
+      "scene": "duplicate",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "Follow the clue",
+      "bubble": "Same event. Same ID.",
+      "caption": "Two distinct events can share text; text alone is not an event ID.",
+      "scene": "inspect",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "Patch the replay",
+      "bubble": "Changed content? Stop.",
+      "caption": "Same ID and content: skip. Conflicting content: reject and preserve the note.",
+      "scene": "repair",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "Result and limits",
+      "bubble": "Let the checks speak.",
+      "caption": "Local checks on this original demo fixture; no production-impact claim.",
+      "scene": "check",
+      "evidence": [
+        "C1"
+      ],
+      "mode": "check",
+      "check_id": "C1"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1500" viewBox="0 0 1540 1500" role="img" aria-label="CommitComic">
+<rect x="0" y="0" width="1540" height="1500" rx="0" fill="#FFF4D4" stroke="none" stroke-width="0"/>
+<text x="50" y="73.25" font-size="45" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CommitComic</text>
+<rect x="1246" y="40" width="239" height="42" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="1262" y="69.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GIT → COMIC</text>
+<text x="50" y="146.7" font-size="42" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">点一次，怎么长出两张便签？</text>
+<text x="53" y="230.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">MoonNotes / 一次有据可查的修复小剧场</text>
+<rect x="57" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">1</text>
+<text x="133" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">事故现场</text>
+<rect x="73" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,443 170,443 148,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">我只是重试了一次！</text>
+<ellipse cx="637.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="659.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="681.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="637.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="659.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="681.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="637.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="659.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="681.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="112.68368421052632" y="579.2494736842106" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="132.79631578947368,617.6463157894736 127.31105263157895,642.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,617.6463157894736 173.93578947368422,642.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112.68368421052632,589.3057894736842 92.57105263157895,608.5042105263158" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="187.64894736842106,589.3057894736842 215.07526315789477,569.1931578947368" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="486" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="97.1421052631579" y="495.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="123.6542105263158" cy="526.6823684210527" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="175.7642105263158" cy="526.6823684210527" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="132.79631578947368,553.6515789473684 150.16631578947369,545.4236842105263 167.5363157894737,553.6515789473684" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="113.59789473684211,510.68368421052634 132.79631578947368,515.2547368421052" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,515.2547368421052 187.64894736842106,510.68368421052634" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="329.64947368421053" y="502.22789473684213" width="95.99210526315791" height="109.70526315789475" rx="5" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="323.25" y="494" width="95.99210526315791" height="109.70526315789475" rx="6" fill="#FFD34D" stroke="#202339" stroke-width="4"/>
+<polygon points="394.55842105263156,494 419.2421052631579,518.6836842105263 394.55842105263156,518.6836842105263" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<ellipse cx="348.8478947368421" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="385.4163157894737" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="351.5905263157895,560.7373684210527 370.7889473684211,570.7936842105263 391.8157894736842,560.7373684210527" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="525.3994736842105" y="502.22789473684213" width="95.99210526315791" height="109.70526315789475" rx="5" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="519.0" y="494" width="95.99210526315791" height="109.70526315789475" rx="6" fill="#FFD34D" stroke="#202339" stroke-width="4"/>
+<polygon points="590.3084210526316,494 614.9921052631579,518.6836842105263 590.3084210526316,518.6836842105263" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<ellipse cx="544.5978947368421" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="581.1663157894737" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="547.3405263157895,560.7373684210527 566.5389473684211,570.7936842105263 587.5657894736842,560.7373684210527" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="444.74999999999994,509 444.74999999999994,584" fill="none" stroke="#FFA5B5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="471.75,509 471.75,584" fill="none" stroke="#FFA5B5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">旧版直接追加，重复导入会多一张便签。</text>
+<text x="75" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="802" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">2</text>
+<text x="878" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">找到线索</text>
+<rect x="818" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,443 915,443 893,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">同一件事，要有同一个ID。</text>
+<ellipse cx="1382.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1404.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1426.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1382.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1404.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1426.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1382.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1404.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1426.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="857.6836842105263" y="579.2494736842106" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="877.7963157894737,617.6463157894736 872.311052631579,642.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="912.5363157894737,617.6463157894736 918.9357894736843,642.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="857.6836842105263,589.3057894736842 837.5710526315789,608.5042105263158" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="932.6489473684211,589.3057894736842 960.0752631578947,569.1931578947368" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="833" y="486" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="842.1421052631579" y="495.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="868.6542105263158" cy="526.6823684210527" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="920.7642105263158" cy="526.6823684210527" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="877.7963157894737,546.3378947368421 895.1663157894737,552.7373684210527 912.5363157894737,546.3378947368421" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1182.5072631578948" y="505.0450526315789" width="93.85894736842106" height="107.26736842105264" rx="5" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="1176.25" y="497" width="93.85894736842106" height="107.26736842105264" rx="6" fill="#FFD34D" stroke="#202339" stroke-width="4"/>
+<polygon points="1245.973789473684,497 1270.108947368421,521.1351578947368 1245.973789473684,521.1351578947368" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<ellipse cx="1201.2790526315791" cy="537.2252631578948" rx="3.575578947368421" ry="5.363368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="1237.0348421052634" cy="537.2252631578948" rx="3.575578947368421" ry="5.363368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="1203.9607368421052,562.2543157894737 1222.7325263157895,572.0871578947368 1243.292105263158,562.2543157894737" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="1200.9736842105262" cy="557.7236842105264" rx="78.72368421052632" ry="78.72368421052632" fill="none" stroke="#202339" stroke-width="9"/>
+<polyline points="1254.3026315789473,606.2105263157895 1306.1078947368421,657.0" fill="none" stroke="#202339" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="820" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">相同文字也可能是两次不同事件，不能只按文字去重。</text>
+<text x="820" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="57" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">3</text>
+<text x="133" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">动手修复</text>
+<rect x="73" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,1028 170,1028 148,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">内容变了？先停，别覆盖。</text>
+<ellipse cx="637.0" cy="1069.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="659.0" cy="1069.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="681.0" cy="1069.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="637.0" cy="1092.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="659.0" cy="1092.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="681.0" cy="1092.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="637.0" cy="1115.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="659.0" cy="1115.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="681.0" cy="1115.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="112.68368421052632" y="1164.2494736842104" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="132.79631578947368,1202.6463157894736 127.31105263157895,1227.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,1202.6463157894736 173.93578947368422,1227.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112.68368421052632,1174.3057894736842 92.57105263157895,1193.5042105263158" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="187.64894736842106,1174.3057894736842 215.07526315789477,1154.193157894737" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="1071" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="97.1421052631579" y="1080.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="123.6542105263158" cy="1111.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="175.7642105263158" cy="1111.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="132.79631578947368,1131.3378947368421 150.16631578947369,1137.7373684210527 167.5363157894737,1131.3378947368421" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="368.42763157894734,1145.7605263157895 349.38157894736844,1135.8565789473685" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416.4236842105263,1145.7605263157895 435.46973684210525,1135.8565789473685" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="368.42763157894734,1164.0447368421053 349.38157894736844,1154.1407894736842" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416.4236842105263,1164.0447368421053 435.46973684210525,1154.1407894736842" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="368.42763157894734,1183.0907894736843 349.38157894736844,1173.1868421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="416.4236842105263,1183.0907894736843 435.46973684210525,1173.1868421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="392.0447368421053" cy="1168.2348684210526" rx="35.044736842105266" ry="39.23486842105263" fill="#FFA5B5" stroke="#202339" stroke-width="4"/>
+<polyline points="392.0447368421053,1145.7605263157895 392.0447368421053,1201.375" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="392.04473684210524" cy="1132.8092105263158" rx="24.378947368421052" ry="19.046052631578945" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="383.28355263157897" cy="1129.0" rx="2.6664473684210526" ry="3.8092105263157894" fill="#FFF4D4" stroke="none" stroke-width="3"/>
+<ellipse cx="403.85328947368424" cy="1129.0" rx="2.6664473684210526" ry="3.8092105263157894" fill="#FFF4D4" stroke="none" stroke-width="3"/>
+<polyline points="375.2842105263158,1116.0486842105263 366.1421052631579,1102.3355263157894" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="408.0434210526316,1116.0486842105263 419.4710526315789,1102.3355263157894" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="532.5" y="1089" width="111.73684210526316" height="111.73684210526316" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="4"/>
+<polyline points="553.8315789473684,1140.421052631579 575.1631578947369,1161.7526315789473 621.8894736842105,1117.0578947368422" fill="none" stroke="#202339" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">相同ID同内容跳过；相同ID异内容报错，保留原文。</text>
+<text x="75" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="802" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">4</text>
+<text x="878" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">结果与边界</text>
+<rect x="818" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,1028 915,1028 893,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">让测试也来作证。</text>
+<ellipse cx="1382.0" cy="1069.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1404.0" cy="1069.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1426.0" cy="1069.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1382.0" cy="1092.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1404.0" cy="1092.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1426.0" cy="1092.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1382.0" cy="1115.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1404.0" cy="1115.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="1426.0" cy="1115.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="857.6836842105263" y="1164.2494736842104" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="877.7963157894737,1202.6463157894736 872.311052631579,1227.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="912.5363157894737,1202.6463157894736 918.9357894736843,1227.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="857.6836842105263,1174.3057894736842 837.5710526315789,1145.9652631578947" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="932.6489473684211,1174.3057894736842 960.0752631578947,1130.4236842105263" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="833" y="1071" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="842.1421052631579" y="1080.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="868.6542105263158" cy="1111.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="920.7642105263158" cy="1111.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="877.7963157894737,1131.3378947368421 895.1663157894737,1137.7373684210527 912.5363157894737,1131.3378947368421" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1075.0" y="1079" width="243.78947368421055" height="137.13157894736844" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="4"/>
+<polyline points="1091.2526315789473,1103.8526315789475 1101.4105263157894,1111.9789473684211 1119.6947368421052,1090.6473684210528" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1145.0894736842106,1103.8526315789475 1282.221052631579,1103.8526315789475" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1091.2526315789473,1137.3736842105263 1101.4105263157894,1145.5 1119.6947368421052,1124.1684210526316" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1145.0894736842106,1137.3736842105263 1282.221052631579,1137.3736842105263" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1091.2526315789473,1170.8947368421052 1101.4105263157894,1179.0210526315789 1119.6947368421052,1157.6894736842105" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1145.0894736842106,1170.8947368421052 1282.221052631579,1170.8947368421052" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="820" y="1268.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">运行4项 / 检查通过</text>
+<text x="820" y="1304.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">仅原创合成演示仓库的本地检查；不代表线上效果。</text>
+<text x="820" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: C1</text>
+<text x="52" y="1458.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">分镜演绎 · 以证据说明为准 · 非线上效果或用户成绩</text>
+</svg>

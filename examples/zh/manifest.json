@@ -1,0 +1,43 @@
+{
+  "format": "commit-comic/1",
+  "edition": "demo-zh",
+  "packet_sha256": "595c552c111a138c28347068a29ec7cba8219acb217bd13cb06f0aa34f2e41a1",
+  "board_sha256": "90340ab9e4e21705cd7285d7a5cbf07f2d8834ae8ff000e0a8453f07cf80a411",
+  "render_redactions": 0,
+  "files": [
+    "comic.svg",
+    "comic.png",
+    "strip.svg",
+    "strip.png",
+    "card.svg",
+    "card.png",
+    "preview.gif",
+    "post.md",
+    "evidence.md",
+    "alt-text.txt",
+    "manifest.json"
+  ],
+  "artifact_sha256": {
+    "comic.svg": "f28f8b7e8f9accbc5fd76b0882809051afe7a2edb384e93eb056d4473c5dca24",
+    "comic.png": "26711594641dd8235ab34319a490e6282999f4e31ae387adda46b77b1fcab192",
+    "strip.svg": "86d85ec2e0e87df97906ac58cfada59e534013d7dd025191ae73555b00c1fde8",
+    "strip.png": "817312a43cd023a68d7e2e7e73f79aa77ec7da878e3841f358a8e6bed77e1e43",
+    "card.svg": "4991839198a76b6c781a8b4a9a0288989834aa96dc68b8408b0aaa5b5d3969d5",
+    "card.png": "508b240d6874464a867c573373fd34917661225b6f638974c9e1ada140b2ef26",
+    "preview.gif": "51e79a6693be460a6096d809f1da56cf1afe0d70d7f52293cc75e0c751e7c303",
+    "post.md": "8b3465e52159fd11b2908c5cfb0d19841d9d1603a529f9ff88fcfb39d321d7e8",
+    "evidence.md": "012bed78e0ccb68415b225ed4ca8fdb3eed62ae3e125a194b77f4295f3d2b5df",
+    "alt-text.txt": "41a88273d93b4d5ef58645089898fa3f4d9171dd3e16d54b5c4ae2572214cfa3"
+  },
+  "coverage": {
+    "range_commits": 2,
+    "included_commits": 2,
+    "changed_paths": 2,
+    "included_diffs": 2,
+    "excluded_paths": 0,
+    "truncated_diffs": 0,
+    "common_pattern_redactions": 0,
+    "net_diff_empty": false
+  },
+  "boundary": "Source references and common-pattern redaction do not certify semantic truth or public safety. No network publication performed."
+}

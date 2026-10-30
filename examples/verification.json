@@ -1,0 +1,16 @@
+{
+  "basis": "Original synthetic Git fixture, real four-test execution and real render tools; no online-user or Agent performance results.",
+  "commit_range": {
+    "base": "6ba257030ab3b928b15ac9b0506b76cc3c17cc8c",
+    "head": "fcd0e40027f482b7ee14851359acac0aa280e328"
+  },
+  "net_diff_evidence": 2,
+  "fixture_tests_reported": 4,
+  "suite_status": "passed",
+  "first_record_added": true,
+  "repeated_record_added": false,
+  "locales": [
+    "en",
+    "zh"
+  ]
+}

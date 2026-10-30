@@ -1,0 +1,57 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "595c552c111a138c28347068a29ec7cba8219acb217bd13cb06f0aa34f2e41a1",
+  "edition": "demo-zh",
+  "locale": "zh",
+  "theme": "pop",
+  "title": "点一次，怎么长出两张便签？",
+  "subtitle": "MoonNotes / 一次有据可查的修复小剧场",
+  "notice": "原创虚构Git演示，实际运行工具产物。",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "事故现场",
+      "bubble": "我只是重试了一次！",
+      "caption": "旧版直接追加，重复导入会多一张便签。",
+      "scene": "duplicate",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "找到线索",
+      "bubble": "同一件事，要有同一个ID。",
+      "caption": "相同文字也可能是两次不同事件，不能只按文字去重。",
+      "scene": "inspect",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "动手修复",
+      "bubble": "内容变了？先停，别覆盖。",
+      "caption": "相同ID同内容跳过；相同ID异内容报错，保留原文。",
+      "scene": "repair",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "结果与边界",
+      "bubble": "让测试也来作证。",
+      "caption": "仅原创合成演示仓库的本地检查；不代表线上效果。",
+      "scene": "check",
+      "evidence": [
+        "C1"
+      ],
+      "mode": "check",
+      "check_id": "C1"
+    }
+  ]
+}

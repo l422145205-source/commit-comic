@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="2920" viewBox="0 0 1000 2920" role="img" aria-label="CommitComic">
+<rect x="0" y="0" width="1000" height="2920" rx="0" fill="#FFF4D4" stroke="none" stroke-width="0"/>
+<text x="50" y="73.25" font-size="45" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CommitComic</text>
+<rect x="706" y="40" width="239" height="42" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="722" y="69.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GIT → COMIC</text>
+<text x="50" y="146.7" font-size="42" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">One retry. Two notes. What happened</text>
+<text x="50" y="198.7" font-size="42" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">?</text>
+<text x="53" y="230.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">MoonNotes / a repair story with traceable evidence</text>
+<rect x="57" y="278" width="900" height="590" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="270" width="900" height="590" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">1</text>
+<text x="133" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Double trouble</text>
+<rect x="73" y="346" width="854" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,443 170,443 148,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">I only clicked retry!</text>
+<ellipse cx="842.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="484.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="507.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="530.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="112.68368421052632" y="579.2494736842106" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="132.79631578947368,617.6463157894736 127.31105263157895,642.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,617.6463157894736 173.93578947368422,642.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112.68368421052632,589.3057894736842 92.57105263157895,608.5042105263158" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="187.64894736842106,589.3057894736842 215.07526315789477,569.1931578947368" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="486" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="97.1421052631579" y="495.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="123.6542105263158" cy="526.6823684210527" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="175.7642105263158" cy="526.6823684210527" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="132.79631578947368,553.6515789473684 150.16631578947369,545.4236842105263 167.5363157894737,553.6515789473684" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="113.59789473684211,510.68368421052634 132.79631578947368,515.2547368421052" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,515.2547368421052 187.64894736842106,510.68368421052634" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="409.5994736842105" y="502.22789473684213" width="95.99210526315791" height="109.70526315789475" rx="5" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="403.2" y="494" width="95.99210526315791" height="109.70526315789475" rx="6" fill="#FFD34D" stroke="#202339" stroke-width="4"/>
+<polygon points="474.50842105263155,494 499.1921052631579,518.6836842105263 474.50842105263155,518.6836842105263" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<ellipse cx="428.79789473684207" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="465.3663157894737" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="431.54052631578946,560.7373684210527 450.73894736842107,570.7936842105263 471.7657894736842,560.7373684210527" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="664.7994736842106" y="502.22789473684213" width="95.99210526315791" height="109.70526315789475" rx="5" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="658.4000000000001" y="494" width="95.99210526315791" height="109.70526315789475" rx="6" fill="#FFD34D" stroke="#202339" stroke-width="4"/>
+<polygon points="729.7084210526317,494 754.392105263158,518.6836842105263 729.7084210526317,518.6836842105263" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<ellipse cx="683.9978947368422" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="720.5663157894738" cy="535.1394736842105" rx="3.6568421052631583" ry="5.485263157894737" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="686.7405263157896,560.7373684210527 705.9389473684212,570.7936842105263 726.9657894736843,560.7373684210527" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="561.5999999999999,509 561.5999999999999,584" fill="none" stroke="#FFA5B5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="596.8,509 596.8,584" fill="none" stroke="#FFA5B5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">The previous importer appended a second note on replay.</text>
+<text x="75" y="839.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="57" y="908" width="900" height="590" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="900" width="900" height="590" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="916" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="944.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">2</text>
+<text x="133" y="945.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Follow the clue</text>
+<rect x="73" y="976" width="854" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,1073 170,1073 148,1095" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="1015.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Same event. Same ID.</text>
+<ellipse cx="842.0" cy="1114.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="1114.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="1114.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="1137.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="1137.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="1137.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="1160.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="1160.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="1160.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="112.68368421052632" y="1209.2494736842104" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="132.79631578947368,1247.6463157894736 127.31105263157895,1272.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,1247.6463157894736 173.93578947368422,1272.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112.68368421052632,1219.3057894736842 92.57105263157895,1238.5042105263158" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="187.64894736842106,1219.3057894736842 215.07526315789477,1199.193157894737" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="1116" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="97.1421052631579" y="1125.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="123.6542105263158" cy="1156.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="175.7642105263158" cy="1156.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="132.79631578947368,1176.3378947368421 150.16631578947369,1182.7373684210527 167.5363157894737,1176.3378947368421" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="550.2572631578947" y="1135.045052631579" width="93.85894736842106" height="107.26736842105264" rx="5" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="544.0" y="1127" width="93.85894736842106" height="107.26736842105264" rx="6" fill="#FFD34D" stroke="#202339" stroke-width="4"/>
+<polygon points="613.7237894736842,1127 637.858947368421,1151.135157894737 613.7237894736842,1151.135157894737" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<ellipse cx="569.0290526315789" cy="1167.2252631578947" rx="3.575578947368421" ry="5.363368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="604.7848421052631" cy="1167.2252631578947" rx="3.575578947368421" ry="5.363368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="571.7107368421052,1192.2543157894736 590.4825263157895,1202.087157894737 611.0421052631579,1192.2543157894736" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="552.3236842105263" cy="1187.7236842105262" rx="78.72368421052632" ry="78.72368421052632" fill="none" stroke="#202339" stroke-width="9"/>
+<polyline points="605.6526315789473,1236.2105263157896 657.457894736842,1287.0" fill="none" stroke="#202339" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="1311.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Two distinct events can share text; text alone is not an event</text>
+<text x="75" y="1343.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">ID.</text>
+<text x="75" y="1469.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="57" y="1538" width="900" height="590" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="1530" width="900" height="590" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="1546" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="1574.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">3</text>
+<text x="133" y="1575.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Patch the replay</text>
+<rect x="73" y="1606" width="854" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,1703 170,1703 148,1725" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="1645.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Changed content? Stop.</text>
+<ellipse cx="842.0" cy="1744.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="1744.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="1744.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="1767.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="1767.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="1767.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="1790.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="1790.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="1790.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="112.68368421052632" y="1839.2494736842104" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="132.79631578947368,1877.6463157894736 127.31105263157895,1902.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,1877.6463157894736 173.93578947368422,1902.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112.68368421052632,1849.3057894736842 92.57105263157895,1868.5042105263158" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="187.64894736842106,1849.3057894736842 215.07526315789477,1829.193157894737" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="1746" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="97.1421052631579" y="1755.1421052631579" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="123.6542105263158" cy="1786.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="175.7642105263158" cy="1786.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="132.79631578947368,1806.3378947368421 150.16631578947369,1812.7373684210527 167.5363157894737,1806.3378947368421" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="458.62763157894733,1820.7605263157895 439.5815789473684,1810.8565789473685" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="506.62368421052633,1820.7605263157895 525.6697368421053,1810.8565789473685" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="458.62763157894733,1839.0447368421053 439.5815789473684,1829.1407894736842" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="506.62368421052633,1839.0447368421053 525.6697368421053,1829.1407894736842" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="458.62763157894733,1858.0907894736843 439.5815789473684,1848.1868421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="506.62368421052633,1858.0907894736843 525.6697368421053,1848.1868421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="482.2447368421052" cy="1843.2348684210526" rx="35.044736842105266" ry="39.23486842105263" fill="#FFA5B5" stroke="#202339" stroke-width="4"/>
+<polyline points="482.2447368421052,1820.7605263157895 482.2447368421052,1876.375" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<ellipse cx="482.2447368421052" cy="1807.8092105263158" rx="24.378947368421052" ry="19.046052631578945" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="473.48355263157896" cy="1804.0" rx="2.6664473684210526" ry="3.8092105263157894" fill="#FFF4D4" stroke="none" stroke-width="3"/>
+<ellipse cx="494.05328947368423" cy="1804.0" rx="2.6664473684210526" ry="3.8092105263157894" fill="#FFF4D4" stroke="none" stroke-width="3"/>
+<polyline points="465.4842105263158,1791.0486842105263 456.34210526315786,1777.3355263157894" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="498.24342105263156,1791.0486842105263 509.67105263157896,1777.3355263157894" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="676.0" y="1764" width="111.73684210526316" height="111.73684210526316" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="4"/>
+<polyline points="697.3315789473684,1815.421052631579 718.6631578947369,1836.7526315789473 765.3894736842105,1792.0578947368422" fill="none" stroke="#202339" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="1941.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Same ID and content: skip. Conflicting content: reject and</text>
+<text x="75" y="1973.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">preserve the note.</text>
+<text x="75" y="2099.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="57" y="2168" width="900" height="590" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="2160" width="900" height="590" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="2176" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="2204.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">4</text>
+<text x="133" y="2205.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Result and limits</text>
+<rect x="73" y="2236" width="854" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,2333 170,2333 148,2355" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="2275.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Let the checks speak.</text>
+<ellipse cx="842.0" cy="2374.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="2374.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="2374.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="2397.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="2397.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="2397.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="842.0" cy="2420.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="864.0" cy="2420.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<ellipse cx="886.0" cy="2420.0" rx="2.0" ry="2.0" fill="#FFA5B5" stroke="none" stroke-width="3"/>
+<rect x="112.68368421052632" y="2469.2494736842104" width="74.96526315789474" height="38.39684210526316" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="132.79631578947368,2507.6463157894736 127.31105263157895,2532.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="167.5363157894737,2507.6463157894736 173.93578947368422,2532.33" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="112.68368421052632,2479.3057894736844 92.57105263157895,2450.9652631578947" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="187.64894736842106,2479.3057894736844 215.07526315789477,2435.4236842105265" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="2376" width="123.4184210526316" height="95.99210526315791" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="97.1421052631579" y="2385.142105263158" width="105.1342105263158" height="74.05105263157895" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="123.6542105263158" cy="2416.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="175.7642105263158" cy="2416.6823684210526" rx="4.571052631578948" ry="6.856578947368422" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="132.79631578947368,2436.337894736842 150.16631578947369,2442.7373684210525 167.5363157894737,2436.337894736842" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="412.0" y="2384" width="243.78947368421055" height="137.13157894736844" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="4"/>
+<polyline points="428.2526315789474,2408.8526315789472 438.41052631578947,2416.978947368421 456.69473684210527,2395.6473684210523" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="482.08947368421053,2408.8526315789472 619.2210526315789,2408.8526315789472" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="428.2526315789474,2442.3736842105263 438.41052631578947,2450.5 456.69473684210527,2429.1684210526314" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="482.08947368421053,2442.3736842105263 619.2210526315789,2442.3736842105263" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="428.2526315789474,2475.8947368421054 438.41052631578947,2484.021052631579 456.69473684210527,2462.6894736842105" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="482.08947368421053,2475.8947368421054 619.2210526315789,2475.8947368421054" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="75" y="2573.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">4 run / suite passed</text>
+<text x="75" y="2609.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Local checks on this original demo fixture; no</text>
+<text x="75" y="2641.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">production-impact claim.</text>
+<text x="75" y="2729.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: C1</text>
+<text x="52" y="2878.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Illustrated interpretation · see evidence notes · no production-impact claim</text>
+</svg>
