@@ -7,6 +7,14 @@ description: "Turn real Git changes into a four-panel development comic, share c
 
 Use the host Agent to select a story and write its copy. Use the bundled tools to collect the specified Git range, bind the storyboard to its evidence, render original vector comic scenes and retain an edition record. This is an installable Agent workflow, not a web app. No model/image API or network access is required by the runtime helpers.
 
+For “show me an example” or a first try, use a bundled reviewed story without asking the user to prepare JSON or clone its source project:
+
+```sh
+python <skill-dir>/scripts/commitcomic.py demo --case completion-race --locale en --out <new-output-folder>
+```
+
+Cases are `completion-race`, `one-line-edit`, `publish-gap` and the synthetic `moonnotes`. `--locale zh` provides Chinese; `--images` adds optional raster exports. Locate `<skill-dir>` from the installed Skill, and save into the user's selected workspace. Say this renders a frozen reviewed case, not a new execution of its historical project or models. Then offer the relevant output; move to the user's own range when requested. [First-run guide](docs/first-run.md)
+
 ## Choose the real update
 
 For a broad request, identify the selected local repository and a meaningful range or previous edition. Read [references/workflow.md](references/workflow.md). Prefer one change with a clear problem, intervention and supported outcome over a collage of unrelated commits. If essential range information is unavailable, inspect local refs/history or ask one concise question; don't scan unrelated personal directories.
@@ -33,7 +41,7 @@ python <skill-dir>/scripts/commitcomic.py draft --packet <packet.json> --locale 
 
 Use the draft as a starting point, then rewrite the four panels around the actual diff: **problem → clue → change → result**. Give the characters short dialogue and put the technical detail in readable captions. Keep the user's audience and tone; the original robot, note and bug scenes support light humor without impersonating real people.
 
-Read [references/format.md](references/format.md) for the JSON contract. Each panel cites evidence IDs. `summary` is an Agent interpretation requiring source review. `quote` requires the bubble to appear literally in cited material. `check` displays a tool-generated summary from a referenced check record. Do not invent before/after metrics, user counts, deployment status or “all tests pass” from a changed test file.
+Read [references/format.md](references/format.md) for the JSON contract. Each panel cites evidence IDs. `summary` is an Agent interpretation requiring source review. `quote` requires the bubble to appear literally in cited material. `check` displays a tool-generated summary from a referenced check record. A `record` evidence row holds a pinned file excerpt (such as a historical experiment report), not a newly executed check. Do not invent before/after metrics, user counts, deployment status or “all tests pass” from a changed test file.
 
 ```sh
 python <skill-dir>/scripts/commitcomic.py validate --packet <packet.json> --board <board.json>

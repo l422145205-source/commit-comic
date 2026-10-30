@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1500" viewBox="0 0 1540 1500" role="img" aria-label="CommitComic">
+<rect x="0" y="0" width="1540" height="1500" rx="0" fill="#FFF4D4" stroke="none" stroke-width="0"/>
+<text x="50" y="73.25" font-size="45" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CommitComic</text>
+<rect x="1246" y="40" width="239" height="42" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="1262" y="69.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GIT → COMIC</text>
+<text x="50" y="146.7" font-size="42" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">只改一句，另外三句别加班。</text>
+<text x="53" y="230.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">VoxStage / 四句对白的一次真实模型增量运行</text>
+<rect x="57" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">1</text>
+<text x="133" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">导演又改词了</text>
+<rect x="73" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,443 170,443 148,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">第一句改一下。其他三句先别动！</text>
+<rect x="89.39252631578947" y="568.8162105263158" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="106.82347368421054,602.0934736842105 102.06957894736843,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,602.0934736842105 142.47768421052632,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="89.39252631578947,577.5316842105264 71.96157894736842,594.1703157894736" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.3624210526316,577.5316842105264 178.13189473684213,560.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="488" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="75.92315789473685" y="495.92315789473685" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="98.9003157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="144.0623157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="106.82347368421054,540.2928421052632 121.87747368421054,545.839052631579 136.93147368421052,540.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="242.25" y="506" width="102.375" height="83" rx="9" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<polyline points="255.25,540.5 255.25,551.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="267.9791666666667,535.0 267.9791666666667,557.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="280.7083333333333,529.5 280.7083333333333,562.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="293.4375,536.5 293.4375,555.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="306.1666666666667,531.0 306.1666666666667,561.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="318.8958333333333,538.0 318.8958333333333,554.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="331.625,532.5 331.625,559.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="250.25" y="492.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 1</text>
+<text x="248.25" y="615.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">EDIT</text>
+<rect x="353.625" y="506" width="102.375" height="83" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<polyline points="366.625,537.0 366.625,555.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="379.3541666666667,531.5 379.3541666666667,560.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="392.0833333333333,538.5 392.0833333333333,553.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="404.8125,533.0 404.8125,559.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="417.5416666666667,540.0 417.5416666666667,552.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="430.2708333333333,534.5 430.2708333333333,557.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="443.0,529.0 443.0,563.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="361.625" y="492.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 2</text>
+<text x="359.625" y="615.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">same</text>
+<rect x="465.0" y="506" width="102.375" height="83" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<polyline points="478.0,533.5 478.0,558.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="490.7291666666667,540.5 490.7291666666667,551.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="503.4583333333333,535.0 503.4583333333333,557.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="516.1875,529.5 516.1875,562.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="528.9166666666666,536.5 528.9166666666666,555.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="541.6458333333334,531.0 541.6458333333334,561.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="554.375,538.0 554.375,554.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="473.0" y="492.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 3</text>
+<text x="471.0" y="615.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">same</text>
+<rect x="576.375" y="506" width="102.375" height="83" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<polyline points="589.375,530.0 589.375,562.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="602.1041666666666,537.0 602.1041666666666,555.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="614.8333333333334,531.5 614.8333333333334,560.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="627.5625,538.5 627.5625,553.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="640.2916666666666,533.0 640.2916666666666,559.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="653.0208333333334,540.0 653.0208333333334,552.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="665.75,534.5 665.75,557.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="584.375" y="492.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 4</text>
+<text x="582.375" y="615.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">same</text>
+<text x="75" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">四句对白的公开演示里，只修改了s01台词。</text>
+<text x="75" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: R1</text>
+<rect x="802" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">2</text>
+<text x="878" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">一句一个指纹</text>
+<rect x="818" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,443 915,443 893,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">台词、音色、指令、模型，一起算。</text>
+<rect x="834.3925263157895" y="568.8162105263158" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="851.8234736842105,602.0934736842105 847.0695789473684,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,602.0934736842105 887.4776842105264,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="834.3925263157895,577.5316842105264 816.9615789473684,594.1703157894736" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="899.3624210526316,577.5316842105264 923.1318947368421,560.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="813" y="488" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="820.9231578947368" y="495.92315789473685" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="843.9003157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="889.0623157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="851.8234736842105,540.2928421052632 866.8774736842105,545.839052631579 881.9314736842106,540.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="987.25" y="482" width="136.5" height="51" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="997.25" y="514.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">text</text>
+<rect x="1135.75" y="482" width="136.5" height="51" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="1145.75" y="514.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">voice</text>
+<rect x="1284.25" y="482" width="136.5" height="51" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="1294.25" y="514.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">model</text>
+<polyline points="1210.0,541 1210.0,565" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1045.165" y="573" width="329.67" height="52" rx="10" fill="#FFD34D" stroke="#202339" stroke-width="3"/>
+<text x="1060.165" y="607.85" font-size="21" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">take fingerprint</text>
+<text x="820" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">缓存键覆盖模型身份和合成参数；读取候选时复核音频哈希。</text>
+<text x="820" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="57" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">3</text>
+<text x="133" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">该重做的才重做</text>
+<rect x="73" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,1028 170,1028 148,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">三句复用，一句重新合成。</text>
+<rect x="89.39252631578947" y="1153.816210526316" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="106.82347368421054,1187.0934736842105 102.06957894736843,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,1187.0934736842105 142.47768421052632,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="89.39252631578947,1162.5316842105262 71.96157894736842,1179.1703157894738" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.3624210526316,1162.5316842105262 178.13189473684213,1145.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="1073" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="75.92315789473685" y="1080.9231578947367" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="98.9003157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="144.0623157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="106.82347368421054,1125.2928421052632 121.87747368421054,1130.8390526315789 136.93147368421052,1125.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="242.25" y="1084" width="136.5" height="91" rx="10" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="254.25" y="1134.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">TAKE</text>
+<polyline points="380.75,1128 389.75,1128" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="390.75" y="1084" width="136.5" height="91" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="402.75" y="1134.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">ASR</text>
+<polyline points="529.25,1128 538.25,1128" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="539.25" y="1084" width="136.5" height="91" rx="10" fill="#A8DCA9" stroke="#202339" stroke-width="3"/>
+<text x="551.25" y="1134.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CHECK</text>
+<text x="249.25" y="1215.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">independent transcription</text>
+<text x="75" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">修改后的候选继续经过独立ASR核对和既定约束检查。</text>
+<text x="75" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1</text>
+<rect x="802" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">4</text>
+<text x="878" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">这次到底动了几句</text>
+<rect x="818" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,1028 915,1028 893,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">历史记录：新增1次，复用3次。</text>
+<rect x="834.3925263157895" y="1153.816210526316" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="851.8234736842105,1187.0934736842105 847.0695789473684,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,1187.0934736842105 887.4776842105264,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="834.3925263157895,1162.5316842105262 816.9615789473684,1137.9698947368422" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="899.3624210526316,1162.5316842105262 923.1318947368421,1124.5005263157896" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="813" y="1073" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="820.9231578947368" y="1080.9231578947367" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="843.9003157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="889.0623157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="851.8234736842105,1125.2928421052632 866.8774736842105,1130.8390526315789 881.9314736842106,1125.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="987.25" y="1091" width="102.375" height="83" rx="9" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<polyline points="1000.25,1125.5 1000.25,1136.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1012.9791666666666,1120.0 1012.9791666666666,1142.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1025.7083333333333,1114.5 1025.7083333333333,1147.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1038.4375,1121.5 1038.4375,1140.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1051.1666666666667,1116.0 1051.1666666666667,1146.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1063.8958333333333,1123.0 1063.8958333333333,1139.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1076.625,1117.5 1076.625,1144.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="995.25" y="1077.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 1</text>
+<text x="993.25" y="1200.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">NEW</text>
+<rect x="1098.625" y="1091" width="102.375" height="83" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<polyline points="1111.625,1122.0 1111.625,1140.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1124.3541666666667,1116.5 1124.3541666666667,1145.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1137.0833333333333,1123.5 1137.0833333333333,1138.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1149.8125,1118.0 1149.8125,1144.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1162.5416666666667,1125.0 1162.5416666666667,1137.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1175.2708333333333,1119.5 1175.2708333333333,1142.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1188.0,1114.0 1188.0,1148.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1106.625" y="1077.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 2</text>
+<text x="1104.625" y="1200.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">KEEP</text>
+<rect x="1210.0" y="1091" width="102.375" height="83" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<polyline points="1223.0,1118.5 1223.0,1143.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1235.7291666666667,1125.5 1235.7291666666667,1136.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1248.4583333333333,1120.0 1248.4583333333333,1142.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1261.1875,1114.5 1261.1875,1147.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1273.9166666666667,1121.5 1273.9166666666667,1140.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1286.6458333333333,1116.0 1286.6458333333333,1146.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1299.375,1123.0 1299.375,1139.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1218.0" y="1077.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 3</text>
+<text x="1216.0" y="1200.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">KEEP</text>
+<rect x="1321.375" y="1091" width="102.375" height="83" rx="9" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<polyline points="1334.375,1115.0 1334.375,1147.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1347.1041666666667,1122.0 1347.1041666666667,1140.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1359.8333333333333,1116.5 1359.8333333333333,1145.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1372.5625,1123.5 1372.5625,1138.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1385.2916666666667,1118.0 1385.2916666666667,1144.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1398.0208333333333,1125.0 1398.0208333333333,1137.0" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1410.75,1119.5 1410.75,1142.5" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1329.375" y="1077.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">LINE 4</text>
+<text x="1327.375" y="1200.75" font-size="15" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">KEEP</text>
+<text x="820" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">来自冻结实测记录；本轮只重绘漫画，没有重新运行语音模型。</text>
+<text x="820" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: R1</text>
+<text x="52" y="1458.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">分镜演绎 · 以证据说明为准 · 非线上效果或用户成绩</text>
+</svg>

@@ -2,114 +2,103 @@
 
 # CommitComic
 
-### You fixed the bug. Now tell the story.
+### Your commits have a story.
 
-**An Agent Skill that turns real Git changes into source-linked development comics.**
+**An Agent Skill that turns real code changes into development comics and shareable updates.**
 
-[中文](README.md) · [Worked example](examples/README.md) · [Skill entry](SKILL.md) · [Reproduce it](tools/README.md)
+[中文](README.zh-CN.md) · [Three real stories](examples/cases/README.md) · [Try one](#try-it-before-pointing-it-at-your-project) · [Skill](SKILL.md)
 
-![Four-panel reveal: a note-import replay, the event-ID clue, the fix and a scoped check](examples/en/preview.gif)
+![A worker finishes, but a two-read supervisor calls it missing. CommitComic explains the correction in four panels.](examples/cases/completion-race/en/preview.gif)
 
-*Original synthetic MoonNotes project; actual Git collection, four local tests and render outputs. This is a comic reveal, not an application recording.*
+*From a real ReelPilot correction. [Inspect the pinned source](examples/cases/completion-race/en/evidence.md).*
 
 </div>
 
-Your Git log says `fix`, `refactor`, `test`. Your reader wants a different answer: **what happened, what was tricky, and what changed?**
+The worker finished. The supervisor called it missing. What happened?
 
-Ask your Agent to find one real story in the diff. CommitComic supplies the repeatable path from that evidence to four readable panels, a vertical strip, a share card and editable release copy.
+That is a better opening than “refactor runtime state validation.” CommitComic helps your Agent find the story inside a real diff, explain it in four beats, and export images plus editable copy.
 
-## One retry. Two notes. What happened?
+## Three changes worth explaining
 
-The demo importer used to append another note on replay. The clue: two different events can contain the same text. The fix needs event identity, plus a conflict rule that preserves existing content.
+| Story | The interesting part | Read / see |
+| --- | --- | --- |
+| **I finished. Why am I missing?** | Completion lands between two supervisor reads. The fix decides from one snapshot. | [Comic](examples/cases/completion-race/en/comic.png) · [Source walkthrough](examples/cases/completion-race/README.md) |
+| **One line changed. Spare the other three.** | A recorded four-line audio run makes 1 new synthesis call and reuses 3 takes. | [Comic](examples/cases/one-line-edit/en/comic.png) · [Recorded evidence](examples/cases/one-line-edit/README.md) |
+| **The file exists. Why no download?** | A process dies after a rename but before SQL commit. The API keeps the uncommitted result behind HTTP 409. | [Comic](examples/cases/publish-gap/en/comic.png) · [Fault record](examples/cases/publish-gap/README.md) |
 
-![English comic: the duplicate-note problem, event identity, the implemented guard and local checks](examples/en/comic.png)
+These are examples from the maintainer's public projects, not customer testimonials. The source experiments are historical; rendering these comics does not rerun the models or fault tests. New readers can open every result without installing anything.
 
-[Inspect the sources](examples/en/evidence.md) · [Storyboard JSON](assets/board.en.example.json) · [Chinese version](examples/zh/comic.png)
-
-## Why install a Skill?
-
-A regular chat can write a storyboard too. This packages the reusable workflow and its tools:
-
-| Step | What you get |
-| --- | --- |
-| Find the actual change | Read-only collection of a selected Git range, using endpoint net diffs rather than treating commit titles as proof |
-| Make it readable | An Agent-authored problem → clue → change → result story, with short dialogue and technical captions |
-| Keep the source nearby | Evidence IDs, an exact packet hash, literal-quote checks and scoped check records |
-| Export once | Editable SVGs; optional PNGs and GIF; a vertical strip, square card, post, alt text and evidence notes |
-| Continue next time | A local edition ledger that remembers the prior head and treats exact repeated records as no-ops |
-
-No promise of virality. The purpose is to make real work easier to explain and share.
-
-## Use it for
-
-- **Bug-fix stories:** a surprising old behavior, the useful clue, the change and a supported result.
-- **Release highlights:** one approachable story, with full scope kept in accompanying notes.
-- **Technical lessons:** an original example for idempotency, validation or cache behavior.
-- **Team handoffs:** a visual explanation of why the code changed, with source details to follow.
-
-## Install and ask
+## Install, then ask your Agent
 
 ```sh
 npx skills add l422145205-source/commit-comic --skill commit-comic
 ```
 
-Or download the repository and load its complete directory through your Agent host. The entry is [SKILL.md](SKILL.md). Local Git and Python 3.10+ are required. SVG/text export uses the standard library; PNG/GIF adds the optional Pillow dependency and suitable local fonts.
-
 Example for Codex:
 
 ```text
-Use $commit-comic on this repository from v0.2.0 to HEAD.
-Pick one bug fix and make an approachable English four-panel comic.
-Include a vertical strip, share card and post. Keep claims grounded
-in the diff and available check results. Save locally first.
+Use $commit-comic on my repository from v0.2.0 to HEAD.
+Pick one change worth explaining. Make a light four-panel comic,
+a vertical strip and release copy. Read the actual diff first.
+Keep the output local and leave unsupported results out.
 ```
 
-Or: “Use CommitComic for this week's devlog. Explain one highlight to someone seeing the project for the first time.”
+Or start with: **“Use CommitComic to show me the bundled completion-race story.”** Your Agent can render the reviewed example before touching your project. [First-run guide](docs/first-run.md)
 
-The host Agent selects the story, understands the code and writes the words. The helpers collect, validate and render. They need no model/image API, make no network requests and publish nothing.
+The host Agent reads code, chooses the story and writes the dialogue. The bundled Python tools collect the selected committed changes, check source bindings and draw editable vector scenes. They do not need a separate model API or image service.
 
-## One story, several formats
+## What comes out?
 
-| File | Format | Example |
-| --- | --- | --- |
-| `comic.svg / .png` | 1540×1500 four-panel page | [Open](examples/en/comic.png) |
-| `strip.svg / .png` | 1000×2920 vertical strip | [Open](examples/en/strip.png) |
-| `card.svg / .png` | 1200×1200 share card | [Open](examples/en/card.png) |
-| `preview.gif` | Sequential panel reveal | [Open](examples/en/preview.gif) |
-| `post.md` | Editable copy | [Read](examples/en/post.md) |
-| `evidence.md / manifest.json` | Scope, sources and artifact hashes | [Sources](examples/en/evidence.md) · [Manifest](examples/en/manifest.json) |
+| Artifact | Use it for |
+| --- | --- |
+| **Four-panel page** · SVG + optional PNG | README updates, devlogs and explanations |
+| **Vertical strip** · SVG + optional PNG | Phone reading and long-form posts |
+| **Square share card** · SVG + optional PNG | A cover with the story's hook |
+| **Panel-reveal GIF** · optional | A quick illustrated preview |
+| **Post + alt text + source notes** | Editable copy and evidence readers can follow |
 
-Built-in `pop` and `night` palettes use four original vector scenes with a monitor-headed coder, notes and a bug. These are deterministic, editable templates rather than arbitrary image-model art.
+[See the complete export set](examples/cases/README.md). Built-in scenes now include supervisor races, snapshots, audio takes, fingerprints, ASR checks, publication gaps and recovery, alongside the original coder, note and bug scenes. `pop` and `night` palettes are available. These are vector templates, not an arbitrary-art image model.
 
-## Try the complete demo
+## Why install this instead of asking once?
 
-From a downloaded checkout, use a new output directory:
+You get the same reusable path next time: selected Git range → reviewed story → several image formats → a local edition record. The collector uses **net changes between endpoints**, so an old `feat:` title alone cannot turn reverted work into a shipped feature. Each panel keeps its source IDs; supplied check results stay separate from authored interpretation.
+
+A normal chat with equivalent rules and tools can do the task too. The Skill packages them so you do not need to rebuild that workflow for every update. It does not post for you or promise an audience.
+
+## Try it before pointing it at your project
+
+Download the repository, then run from its directory with Python 3.10+:
 
 ```sh
-python tools/reproduce.py --out work/my-demo --locale en
+python scripts/commitcomic.py demo --case completion-race --out work/first-comic
 ```
 
-For PNGs and the GIF:
+Open `work/first-comic/comic.svg`. This path needs **no Git, model, API key, network or third-party Python package**. Use a fresh output directory each time.
+
+For PNGs and GIF:
 
 ```sh
 python -m pip install -r requirements-images.txt
-python tools/reproduce.py --out work/my-image-demo --locale en --images
+python scripts/commitcomic.py demo --case one-line-edit --out work/audio-comic --images
 ```
 
-`--locale both` adds Chinese. Chinese raster output needs a local CJK font, optionally supplied with `--font`. Fonts are not downloaded or bundled. See [the reproduction guide](tools/README.md).
+Other cases: `publish-gap` and `moonnotes`. Add `--locale zh` for Chinese; raster output needs a local CJK font, optionally supplied with `--font`. [Full workflow and dependencies](references/workflow.md)
 
-## Interesting, and accountable
+## Tell us where it stopped being useful
 
-Reverted work is not presented as a shipped feature merely because an old commit said `feat:`. Source IDs and hashes establish a binding; they do not certify that the interpretation is semantically correct. The Agent still reviews source context and distinguishes a demo check from a production result.
+Did the first panel make sense? Did the source-to-story step need too much rewriting? Could you generate one output from your own change?
 
-Common-pattern masking and sensitive-path exclusions are aids, not complete disclosure review. Evidence notes can contain code. Review all artifacts before sharing private material. The tools do not run arbitrary project tests, modify the source working tree or infer deployment impact.
+[Leave a short try-out report](https://github.com/l422145205-source/commit-comic/issues/new?template=try-it.yml). A public, redacted input description and the point where you got stuck are enough; there is no need to share private code or personal information. If the tool is useful to you, a Star makes it easy to find again.
 
-## Checks
+<details>
+<summary><strong>Technical checks, source scope and contribution guide</strong></summary>
 
-**24 tool tests** cover net diffs and reverts, file handling, redaction patterns, source binding, check summaries, artifact hashes and edition continuity. The original fixture runs **4 actual local tests**. Both language outputs have been rendered and inspected; [CI](https://github.com/l422145205-source/commit-comic/actions) runs tests and the English image workflow on Linux and Windows.
+The tool suite contains **28 tests**. [Windows / Linux CI](https://github.com/l422145205-source/commit-comic/actions) runs them, the original synthetic Git demonstration and image rendering for all three real-project stories. The synthetic MoonNotes fixture has its own 4 checks; those are a separate count.
 
-These checks are not an Agent benchmark or an engagement study. [Design evidence](references/design-evidence.md) records the source material and limits.
+Source IDs and hashes bind an illustration to its input, but do not prove the interpretation correct. The Agent still reviews the code and the claim. Common-pattern redaction is an aid, not complete disclosure review; accompanying source notes may contain code. Helpers leave the source working tree unchanged and never publish automatically.
 
-If this helps explain your next change, a Star makes it easy to find again. Contributions of original scenes, font fixes or public, redacted worked examples are welcome. Please keep personal data, private logs and secrets out of submissions.
+[Skill workflow](SKILL.md) · [Format](references/format.md) · [Reproduce](tools/README.md) · [Design evidence](references/design-evidence.md) · [Contribute](CONTRIBUTING.md)
 
-[MIT License](LICENSE) · Original code, vector characters and synthetic examples are included.
+</details>
+
+[MIT License](LICENSE). Original vector art, code and reviewed example boards are included.

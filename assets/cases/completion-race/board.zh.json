@@ -1,0 +1,57 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "b96fa26c221a5a7c68ed4013afde512ae576b7938d6f223464374eeeea95b93e",
+  "edition": "completion-race-zh",
+  "locale": "zh",
+  "theme": "pop",
+  "title": "活干完了，我怎么反而掉线了？",
+  "subtitle": "ReelPilot / 完成状态与监督检查撞在同一瞬间",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "员工交卷了",
+      "bubble": "我完成啦！……你说我失联？",
+      "caption": "旧监督逻辑先查完成，再单独检查所有权。",
+      "scene": "handoff",
+      "evidence": [
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "领导看了两次",
+      "bubble": "第一次还在跑，第二次租约没了。",
+      "caption": "两次读取之间提交完成，会清空活跃租约，旧检查误报。",
+      "scene": "race",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "拍一张再判断",
+      "bubble": "完成和租约，要看同一张快照。",
+      "caption": "worker_state读取一行；同一行用于完成识别与控制校验。",
+      "scene": "snapshot",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "让竞态准时发生",
+      "bubble": "别等它偶发，把时机固定下来。",
+      "caption": "回归测试强制插入这次完成：旧序列抛错，新序列随后识别完成。",
+      "scene": "schedule",
+      "evidence": [
+        "E3"
+      ],
+      "mode": "summary"
+    }
+  ]
+}

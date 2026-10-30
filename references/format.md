@@ -12,6 +12,9 @@ Each evidence row has a stable `id`, a `kind`, `text` and source note:
 
 - `net_diff`: relative `path`, Git status, exact `base`/`head`, bounded excerpt and `truncated` flag.
 - `check`: local label, `status` (`passed`, `failed`, `unknown`), number `count` run, optional skipped count, concise text, original-log SHA-256 and source qualification. This parser handles one unittest summary, not arbitrary CI/performance formats.
+- `record`: selected text from a reviewed, fixed source file, with relative `path`, exact `ref` equal to the packet head, original `file_sha256`, pinned `source_url` and scope note. Used by the bundled historical project cases; it is not a check execution. Do not attach a fabricated unittest summary to report numeric fields.
+
+Optional `source_url` must pin a GitHub file or commit to a full SHA within `project_url`. It is a clickable provenance link; tools do not follow it or use it as execution authority. The bundled real cases use root-commit fingerprints from their complete public histories, matching local collector identity. Their coverage includes only the selected patch excerpts and frozen records, not every changed file.
 
 Coverage reports range/included commit counts, changed/included/excluded path counts, truncated diffs and common-pattern redaction counts. `net_diff_empty` describes endpoint snapshots even if history contains several commits. A subset isn't evidence about excluded files.
 
@@ -29,7 +32,7 @@ Panel order is `problem`, `clue`, `change`, `result`. Each has:
 | `title` | Short panel heading, up to 40 chars; layout can reject an oversized line |
 | `bubble` | Authored speech, up to 100 chars; render bounds are intentionally tighter |
 | `caption` | Context, up to 180 chars; shorten for layout |
-| `scene` | `duplicate`, `inspect`, `repair`, `check` original vector scene |
+| `scene` | Original vector scene: `duplicate`, `inspect`, `repair`, `check`, `handoff`, `race`, `snapshot`, `schedule`, `audio`, `fingerprint`, `audio-check`, `reuse`, `artifact`, `crash`, `gate`, `recover` |
 | `evidence[]` | One or more existing evidence IDs |
 | `mode` | `summary` (interpretation), `quote` (literal source text) or `check` |
 | `check_id` | Required for `check`; must reference a cited check row |

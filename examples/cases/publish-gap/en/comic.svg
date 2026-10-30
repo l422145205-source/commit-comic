@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1500" viewBox="0 0 1540 1500" role="img" aria-label="CommitComic">
+<rect x="0" y="0" width="1540" height="1500" rx="0" fill="#FFF4D4" stroke="none" stroke-width="0"/>
+<text x="50" y="73.25" font-size="45" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CommitComic</text>
+<rect x="1246" y="40" width="239" height="42" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="1262" y="69.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GIT → COMIC</text>
+<text x="50" y="146.7" font-size="42" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">The file exists. Why no download?</text>
+<text x="53" y="230.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">ReelPilot / the gap between a rename and SQL commit</text>
+<rect x="57" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">1</text>
+<text x="133" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">It looks finished</text>
+<rect x="73" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,443 170,443 148,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">The file is here! Still HTTP 409?</text>
+<rect x="89.39252631578947" y="568.8162105263158" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="106.82347368421054,602.0934736842105 102.06957894736843,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,602.0934736842105 142.47768421052632,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="89.39252631578947,577.5316842105264 71.96157894736842,594.1703157894736" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.3624210526316,577.5316842105264 178.13189473684213,560.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="488" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="75.92315789473685" y="495.92315789473685" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="98.9003157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="144.0623157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="106.82347368421054,546.6313684210527 121.87747368421054,539.5005263157894 136.93147368421052,546.6313684210527" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90.18484210526316,509.3925263157895 106.82347368421054,513.3541052631579" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,513.3541052631579 154.3624210526316,509.3925263157895" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="242.25" y="484" width="191.565" height="128" rx="10" fill="#A8DCA9" stroke="#202339" stroke-width="3"/>
+<text x="256.25" y="518.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">FILE</text>
+<text x="256.25" y="566.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">exists</text>
+<rect x="487.275" y="484" width="191.565" height="128" rx="10" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="501.275" y="518.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">SQL</text>
+<text x="501.275" y="565.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">pending</text>
+<text x="447.18" y="558.5" font-size="30" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">≠</text>
+<text x="75" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">A result file may exist before database</text>
+<text x="75" y="713.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">completion commits.</text>
+<text x="75" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1, E2</text>
+<rect x="802" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">2</text>
+<text x="878" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Killed in the gap</text>
+<rect x="818" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,443 915,443 893,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">After rename. Before SQL commit.</text>
+<rect x="834.3925263157895" y="568.8162105263158" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="851.8234736842105,602.0934736842105 847.0695789473684,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,602.0934736842105 887.4776842105264,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="834.3925263157895,577.5316842105264 816.9615789473684,594.1703157894736" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="899.3624210526316,577.5316842105264 923.1318947368421,560.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="813" y="488" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="820.9231578947368" y="495.92315789473685" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="843.9003157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="889.0623157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="851.8234736842105,540.2928421052632 866.8774736842105,545.839052631579 881.9314736842106,540.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="987.25" y="484" width="191.565" height="128" rx="10" fill="#A8DCA9" stroke="#202339" stroke-width="3"/>
+<text x="1001.25" y="518.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">FILE</text>
+<text x="1001.25" y="566.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">exists</text>
+<rect x="1232.275" y="484" width="191.565" height="128" rx="10" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="1246.275" y="518.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">SQL</text>
+<text x="1246.275" y="565.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">pending</text>
+<text x="1192.18" y="558.5" font-size="30" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">≠</text>
+<polygon points="1192.18,469 1241.185,469 1214.455,522 1263.46,522 1174.36,615 1196.635,550 1147.63,550" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="1147.63" y="640.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">OS kill</text>
+<text x="820" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">The fault test kills the process at this point:</text>
+<text x="820" y="713.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SQL rolls back; the file can remain.</text>
+<text x="820" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1, E2</text>
+<rect x="57" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">3</text>
+<text x="133" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Serve committed work</text>
+<rect x="73" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,1028 170,1028 148,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">A file alone is not completion.</text>
+<rect x="89.39252631578947" y="1153.816210526316" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="106.82347368421054,1187.0934736842105 102.06957894736843,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,1187.0934736842105 142.47768421052632,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="89.39252631578947,1162.5316842105262 71.96157894736842,1179.1703157894738" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.3624210526316,1162.5316842105262 178.13189473684213,1145.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="1073" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="75.92315789473685" y="1080.9231578947367" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="98.9003157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="144.0623157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="106.82347368421054,1125.2928421052632 121.87747368421054,1130.8390526315789 136.93147368421052,1125.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="242.25" y="1069" width="191.565" height="128" rx="10" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="260.25" y="1108.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">HTTP</text>
+<text x="266.25" y="1161.3" font-size="38" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">409</text>
+<polyline points="465.0,1137 665.4749999999999,1137" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="554.0999999999999,1087 554.0999999999999,1187" fill="none" stroke="#FFA5B5" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="473.90999999999997" y="1221.45" font-size="17" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">not committed yet</text>
+<text x="75" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">The test checks HTTP 409 for an uncommitted</text>
+<text x="75" y="1298.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">result instead of serving it.</text>
+<text x="75" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E2</text>
+<rect x="802" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">4</text>
+<text x="878" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Keep verified renders</text>
+<rect x="818" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,1028 915,1028 893,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Verified work can be reused.</text>
+<rect x="834.3925263157895" y="1153.816210526316" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="851.8234736842105,1187.0934736842105 847.0695789473684,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,1187.0934736842105 887.4776842105264,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="834.3925263157895,1162.5316842105262 816.9615789473684,1137.9698947368422" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="899.3624210526316,1162.5316842105262 923.1318947368421,1124.5005263157896" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="813" y="1073" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="820.9231578947368" y="1080.9231578947367" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="843.9003157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="889.0623157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="851.8234736842105,1125.2928421052632 866.8774736842105,1130.8390526315789 881.9314736842106,1125.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="987.25" y="1084" width="133.5" height="91" rx="12" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="997.25" y="1134.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">verify</text>
+<polyline points="1123.75,1128 1133.75,1128" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1135.75" y="1084" width="133.5" height="91" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="3"/>
+<text x="1145.75" y="1134.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">reuse</text>
+<polyline points="1272.25,1128 1282.25,1128" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1284.25" y="1084" width="133.5" height="91" rx="12" fill="#FFD34D" stroke="#202339" stroke-width="3"/>
+<text x="1294.25" y="1134.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">commit</text>
+<text x="991.25" y="1221.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">verified work stays useful</text>
+<text x="820" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">The frozen fault record ends complete with 1</text>
+<text x="820" y="1298.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">render commit. No power-loss atomicity claim.</text>
+<text x="820" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: R1</text>
+<text x="52" y="1458.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">Illustrated interpretation · see evidence notes · no production-impact claim</text>
+</svg>

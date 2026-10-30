@@ -7,6 +7,10 @@ from evidence import attach_check,collect,draft,load,pretty,record,validate_boar
 
 def main():
     p=argparse.ArgumentParser(description=__doc__);sub=p.add_subparsers(dest='command',required=True)
+    c=sub.add_parser('demo',help='Render a reviewed bundled case; no Git, model or network needed')
+    c.add_argument('--case',choices=['completion-race','one-line-edit','publish-gap','moonnotes'],default='completion-race')
+    c.add_argument('--locale',choices=['zh','en'],default='en');c.add_argument('--out',type=Path,required=True)
+    c.add_argument('--images',action='store_true');c.add_argument('--font',type=Path)
     c=sub.add_parser('collect');c.add_argument('--repo',type=Path,required=True);c.add_argument('--base');c.add_argument('--head',default='HEAD')
     c.add_argument('--project',default='Project update');c.add_argument('--project-url');c.add_argument('--ledger',type=Path)
     c.add_argument('--max-commits',type=int,default=60);c.add_argument('--max-files',type=int,default=30);c.add_argument('--out',type=Path,required=True)
@@ -18,7 +22,10 @@ def main():
         if name=='record':c.add_argument('--ledger',type=Path,required=True)
     a=p.parse_args()
     try:
-        if a.command=='collect':value=collect(a.repo,a.base,a.head,a.project,a.project_url,a.max_commits,a.max_files,a.ledger);write_new(a.out,value);value={'evidence':len(value['evidence']),'coverage':value['coverage']}
+        if a.command=='demo':
+            from demo import run_demo
+            value=run_demo(a.case,a.locale,a.out,a.images,a.font)
+        elif a.command=='collect':value=collect(a.repo,a.base,a.head,a.project,a.project_url,a.max_commits,a.max_files,a.ledger);write_new(a.out,value);value={'evidence':len(value['evidence']),'coverage':value['coverage']}
         elif a.command=='attach-check':
             if a.log.stat().st_size>1_000_000:raise ValueError('Check log exceeds 1 MB')
             value=attach_check(load(a.packet),a.log.read_bytes(),a.label);write_new(a.out,value);value={'check':value['evidence'][-1]}

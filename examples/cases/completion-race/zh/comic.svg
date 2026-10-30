@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1540" height="1500" viewBox="0 0 1540 1500" role="img" aria-label="CommitComic">
+<rect x="0" y="0" width="1540" height="1500" rx="0" fill="#FFF4D4" stroke="none" stroke-width="0"/>
+<text x="50" y="73.25" font-size="45" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CommitComic</text>
+<rect x="1246" y="40" width="239" height="42" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="1262" y="69.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GIT → COMIC</text>
+<text x="50" y="146.7" font-size="42" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">活干完了，我怎么反而掉线了？</text>
+<text x="53" y="230.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">ReelPilot / 完成状态与监督检查撞在同一瞬间</text>
+<rect x="57" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">1</text>
+<text x="133" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">员工交卷了</text>
+<rect x="73" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,443 170,443 148,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">我完成啦！……你说我失联？</text>
+<rect x="89.39252631578947" y="568.8162105263158" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="106.82347368421054,602.0934736842105 102.06957894736843,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,602.0934736842105 142.47768421052632,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="89.39252631578947,577.5316842105264 71.96157894736842,594.1703157894736" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.3624210526316,577.5316842105264 178.13189473684213,560.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="488" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="75.92315789473685" y="495.92315789473685" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="98.9003157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="144.0623157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="106.82347368421054,540.2928421052632 121.87747368421054,545.839052631579 136.93147368421052,540.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="242.25" y="488" width="204.93" height="118" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="3"/>
+<text x="257.25" y="525.85" font-size="21" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">WORKER</text>
+<text x="257.25" y="571.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">complete!</text>
+<rect x="500.64" y="488" width="178.20000000000002" height="118" rx="12" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="512.64" y="525.85" font-size="21" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GUARD</text>
+<text x="512.64" y="571.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">BusyJob?</text>
+<text x="456.09000000000003" y="552.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">?!</text>
+<text x="75" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">旧监督逻辑先查完成，再单独检查所有权。</text>
+<text x="75" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E2</text>
+<rect x="802" y="278" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="270" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="286" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="314.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">2</text>
+<text x="878" y="315.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">领导看了两次</text>
+<rect x="818" y="346" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,443 915,443 893,465" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="385.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">第一次还在跑，第二次租约没了。</text>
+<rect x="834.3925263157895" y="568.8162105263158" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="851.8234736842105,602.0934736842105 847.0695789473684,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,602.0934736842105 887.4776842105264,623.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="834.3925263157895,577.5316842105264 816.9615789473684,594.1703157894736" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="899.3624210526316,577.5316842105264 923.1318947368421,560.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="813" y="488" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="820.9231578947368" y="495.92315789473685" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="843.9003157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="889.0623157894737" cy="523.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="851.8234736842105,546.6313684210527 866.8774736842105,539.5005263157894 881.9314736842106,546.6313684210527" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="835.1848421052632,509.3925263157895 851.8234736842105,513.3541052631579" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,513.3541052631579 899.3624210526316,509.3925263157895" fill="none" stroke="#202339" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="987.25" y="481" width="200.475" height="128" rx="10" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="999.25" y="509.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">READ 1</text>
+<text x="999.25" y="556.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">running</text>
+<rect x="1223.365" y="481" width="200.475" height="128" rx="10" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="1235.365" y="509.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">READ 2</text>
+<text x="1235.365" y="556.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">no lease</text>
+<polyline points="1196.635,546 1218.91,546" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="995.25" y="640.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">complete → clear lease</text>
+<text x="820" y="681.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">两次读取之间提交完成，会清空活跃租约，旧检查误报。</text>
+<text x="820" y="794.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1, E2</text>
+<rect x="57" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="50" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="68" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="79" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">3</text>
+<text x="133" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">拍一张再判断</text>
+<rect x="73" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="144,1028 170,1028 148,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="94" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">完成和租约，要看同一张快照。</text>
+<rect x="89.39252631578947" y="1153.816210526316" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="106.82347368421054,1187.0934736842105 102.06957894736843,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="136.93147368421052,1187.0934736842105 142.47768421052632,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="89.39252631578947,1162.5316842105262 71.96157894736842,1179.1703157894738" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="154.3624210526316,1162.5316842105262 178.13189473684213,1145.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="1073" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="75.92315789473685" y="1080.9231578947367" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="98.9003157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="144.0623157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="106.82347368421054,1125.2928421052632 121.87747368421054,1130.8390526315789 136.93147368421052,1125.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="242.25" y="1061" width="445.5" height="158" rx="12" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="260.25" y="1093.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">ONE SNAPSHOT</text>
+<text x="260.25" y="1130.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">owner + status</text>
+<text x="260.25" y="1159.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">lease + control</text>
+<text x="260.25" y="1188.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">same row → decision</text>
+<text x="75" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">worker_state读取一行；同一行用于完成识别与控制校验。</text>
+<text x="75" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E1, E2</text>
+<rect x="802" y="863" width="695" height="545" rx="15" fill="#202339" stroke="none" stroke-width="3"/>
+<rect x="795" y="855" width="695" height="545" rx="15" fill="#FFFFFF" stroke="#202339" stroke-width="4"/>
+<rect x="813" y="871" width="49" height="39" rx="7" fill="#FFD34D" stroke="#202339" stroke-width="2"/>
+<text x="824" y="899.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">4</text>
+<text x="878" y="900.95" font-size="27" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">让竞态准时发生</text>
+<rect x="818" y="931" width="649" height="99" rx="18" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<polygon points="889,1028 915,1028 893,1050" fill="#FFF4D4" stroke="#202339" stroke-width="3"/>
+<text x="839" y="970.25" font-size="25" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">别等它偶发，把时机固定下来。</text>
+<rect x="834.3925263157895" y="1153.816210526316" width="64.96989473684211" height="33.277263157894744" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="851.8234736842105,1187.0934736842105 847.0695789473684,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="881.9314736842106,1187.0934736842105 887.4776842105264,1208.486" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="834.3925263157895,1162.5316842105262 816.9615789473684,1179.1703157894738" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="899.3624210526316,1162.5316842105262 923.1318947368421,1145.1007368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="813" y="1073" width="106.96263157894738" height="83.19315789473686" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="820.9231578947368" y="1080.9231578947367" width="91.11631578947369" height="64.17757894736843" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="843.9003157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="889.0623157894737" cy="1108.258052631579" rx="3.9615789473684213" ry="5.942368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="851.8234736842105,1125.2928421052632 866.8774736842105,1130.8390526315789 881.9314736842106,1125.2928421052632" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="987.25" y="1072" width="136.5" height="70" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="3"/>
+<text x="999.25" y="1110.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">read</text>
+<polyline points="1125.75,1106 1134.75,1106" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1135.75" y="1072" width="136.5" height="70" rx="10" fill="#FFD34D" stroke="#202339" stroke-width="3"/>
+<text x="1147.75" y="1110.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">finish</text>
+<polyline points="1274.25,1106 1283.25,1106" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1284.25" y="1072" width="136.5" height="70" rx="10" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="1296.25" y="1110.3" font-size="18" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">guard</text>
+<text x="995.25" y="1186.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">old: BusyJob</text>
+<text x="995.25" y="1216.15" font-size="19" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">new: active → complete</text>
+<text x="820" y="1266.7" font-size="22" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">回归测试强制插入这次完成：旧序列抛错，新序列随后识别完成。</text>
+<text x="820" y="1379.6" font-size="16" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">SOURCE: E3</text>
+<text x="52" y="1458.0" font-size="20" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">分镜演绎 · 以证据说明为准 · 非线上效果或用户成绩</text>
+</svg>

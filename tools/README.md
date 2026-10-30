@@ -1,5 +1,7 @@
 # Reproduce the example
 
+For the easiest first try, render a reviewed real-project case with `python scripts/commitcomic.py demo --case completion-race --out work/first-comic`. This needs no Git/network/model and does not rerun the historical experiment. To render all three cases, use `python tools/render_cases.py --out work/cases --locale both --images` (optional image dependencies apply). [Case sources](../examples/cases/README.md). The original synthetic Git reproduction follows.
+
 Use Python 3.10+ and Git. The helper creates an **original synthetic** note-import repository, commits its before/after states using a synthetic noreply identity, runs four small tests it authored, collects the actual diff, renders the comic and records the edition twice. It does not read another repository or publish anything.
 
 Run from the downloaded repository directory. Output directories must be new:
@@ -49,6 +51,6 @@ Add `--images` to `render` for raster exports. A new directory prevents accident
 python -m unittest discover -s tests -v
 ```
 
-The 24 tests use temporary original Git fixtures. They cover real net diffs and reverted changes, identity omission/common-pattern redaction, literal filenames/renames, bounded collection, storyboard binding, quotes/check summaries, SVG escaping and output hashes, no-overwrite behavior, and ledger continuity/conflicts. They do not execute arbitrary user code. CI repeats these and the English image demo on Linux and Windows.
+The 28 tests include temporary original Git fixtures and all bundled reviewed boards. They cover net diffs and reverted changes, identity omission/common-pattern redaction, literal filenames/renames, bounded collection, storyboard binding, quotes/check summaries, pinned record sources, SVG escaping/output hashes, no-overwrite behavior, edition continuity, and the first-run CLI from a different working directory. They do not execute arbitrary user code. CI repeats these, the synthetic Git workflow and all three English case renders on Linux and Windows.
 
 For your own project, follow [the workflow](../references/workflow.md); collection reads committed changes only and does not verify production outcomes. Do not publish its evidence notes until that specific code material is approved for disclosure.

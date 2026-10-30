@@ -1,0 +1,61 @@
+{
+  "format": "commit-comic/1",
+  "project": "reelpilot",
+  "project_url": "https://github.com/l422145205-source/reelpilot",
+  "repository_id": "a33d98e3d7d2d74a05d8dca7192d5cc08941ef81cd4423e5428e63fec6c7b7cd",
+  "base": "2e1a94e5572e4ec375a7914bb4e183247d0d42ba",
+  "head": "ba3d650556124b206682ee2eec361148f52fb779",
+  "commits": [
+    {
+      "sha": "ba3d650556124b206682ee2eec361148f52fb779",
+      "subject": "Add cancellable deadline-aware runtime, isolated workers and real process-crash recovery validation"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "net_diff",
+      "path": "src/reelpilot/journal.py",
+      "status": "M",
+      "base": "2e1a94e5572e4ec375a7914bb4e183247d0d42ba",
+      "head": "ba3d650556124b206682ee2eec361148f52fb779",
+      "text": "+    def finalize(self, job, owner, temporary: Path, destination: Path, *, checkpoint=None):\n+        \"\"\"Linearize completion against cancel using the same SQLite write lock.\n+\n+        A process death after rename but before commit may leave an unacknowledged\n+        file. The API does not serve it until the database completion is committed.\n+        This is process-crash recovery, not a filesystem/DB power-loss transaction.\n+        \"\"\"\n+        if not temporary.resolve().is_relative_to(self.root) or not destination.resolve().is_relative_to(\n+            self.root\n+        ):\n+            raise ValueError(\"final publication escapes job storage\")\n+        with self.connect() as db:\n+            db.execute(\"BEGIN IMMEDIATE\")\n+            row = self._owned(db, job, owner)\n+            temporary.replace(destination)\n+            if checkpoint is not None:\n+                checkpoint(\"result_replaced_before_commit\")\n+            self._owned(db, job, owner)\n+            now = time.time()\n+            db.execute(\n+                \"UPDATE jobs SET owner=NULL,lease_until=0,status='complete',error=NULL,updated=? \"\n+                \"WHERE id=? AND owner=?\",\n+                (now, job, owner),\n+            )\n+            if row[\"request_owner\"] is not None:\n+                db.execute(\n+                    \"UPDATE submissions SET status='complete',phase='complete',lease_until=0,error=NULL,updated=? \"\n+                    \"WHERE job=? AND owner=?\",\n+                    (now, job, row[\"request_owner\"]),\n+                )\n+                db.execute(\n+                    \"INSERT INTO events(job,event,detail,at) VALUES (?,?,?,?)\",\n+                    (job, \"request_complete\", \"atomic finalization\", now),\n+                )\n+\n",
+      "truncated": true,
+      "source_url": "https://github.com/l422145205-source/reelpilot/commit/ba3d650556124b206682ee2eec361148f52fb779",
+      "source": "Reviewed excerpt of a public GitHub parent-to-commit diff. Selected files only; no new execution implied."
+    },
+    {
+      "id": "E2",
+      "kind": "net_diff",
+      "path": "tests/test_process_runtime.py",
+      "status": "A",
+      "base": "2e1a94e5572e4ec375a7914bb4e183247d0d42ba",
+      "head": "ba3d650556124b206682ee2eec361148f52fb779",
+      "text": "+def test_hard_kill_recovers_verified_render_without_serving_uncommitted_result(real_library, tmp_path, point):\n+    journal = Journal(tmp_path / \"jobs\")\n+    queue = Admission(journal, ttl=1, interval=0.15)\n+    body = {\"brief\": {\"text\": \"forest;robot\", \"budget_seconds\": 8}, \"mode\": \"lexical\", \"provider\": \"explicit\"}\n+    old = queue.reserve(\"crash\", body, timeout_seconds=30)\n+    old.start()\n+    child = OwnedProcess([sys.executable, \"-B\", str(HELPER), point], gated=True, env=source_env())\n+    try:\n+        child.send(\n+            (\n+                json.dumps(\n+                    {\n+                        \"job_id\": \"crash\",\n+                        \"owner\": old.owner,\n+                        \"request\": body,\n+                        \"parent_pid\": os.getpid(),\n+                        \"jobs\": str(journal.root),\n+                        \"collection\": str(real_library.root),\n+                        \"lease\": {\"ttl\": 1, \"interval\": 0.15},\n+                    }\n+                )\n+                + \"\\n\"\n+            ).encode()\n+        )\n+        wait_for(lambda: marker(journal.root / \"crash/fault-marker.json\"))\n+        assert child.process.poll() is None\n+        old.stop()  # Simulate the API admission heartbeat dying with its server.\n+        killed = time.monotonic()\n+        child.close()  # OS hard kill, no Python exception handler/finally.\n+        assert process_exited(child.process.pid)\n+        assert (journal.root / \"crash/result.json\").exists() == (point == \"result_replaced_before_commit\")\n+        assert journal.get(\"crash\")[\"status\"] == \"running\"  # Uncommitted SQL rolled back.\n+        wait_for(lambda: queue.get(\"crash\")[\"status\"] == \"interrupted\", seconds=3)\n+        expired = time.monotonic()\n+        with TestClient(create_app(real_library.root, journal.root)) as c:\n+            assert c.get(\"/api/jobs/crash/output\").status_code == 409\n+            assert \"result\" not in c.get(\"/api/jobs/crash\").json()\n+        new = queue.reserve(\"crash\", body, timeout_seconds=30)\n+        new.start()\n+        try:\n+            run_isolated(new, body, real_library)\n+            new.finish()\n+        finally:\n+            new.stop()\n+        assert journal.get(\"crash\")[\"status\"] == queue.get(\"crash\")[\"status\"] == \"complete\"\n+        render = next(s for s in journal.get(\"crash\")[\"stages\"] if s[\"stage\"] == \"render\")\n+        assert render[\"attempts\"] == 1\n+        with pytest.raises(BusyJob):\n+            old.guard()\n+        evidence(\n+            tmp_path,\n+            {\n+                \"case\": point,\n+                \"fault\": \"OS hard kill\",\n+                \"expiry\": \"elapsed request lease\",\n+                \"lease_wait_seconds\": expired - killed,\n+                \"recovery_seconds\": time.monotonic() - expired,\n+                \"render_commits\": render[\"attempts\"],\n+                \"uncommitted_result_served\": False,\n+                \"status\": queue.get(\"crash\")[\"status\"],\n+            },\n+        )\n+    finally:\n+        old.stop()\n+        child.close()\n+\n+\n",
+      "truncated": true,
+      "source_url": "https://github.com/l422145205-source/reelpilot/commit/ba3d650556124b206682ee2eec361148f52fb779",
+      "source": "Reviewed excerpt of a public GitHub parent-to-commit diff. Selected files only; no new execution implied."
+    },
+    {
+      "id": "R1",
+      "kind": "record",
+      "path": "reports/runtime_fault_validation.json",
+      "ref": "ba3d650556124b206682ee2eec361148f52fb779",
+      "file_sha256": "3da8c4ba19d3f9dfef6f8a4aef72672616f43d73fe0a48eff0c7a77ccc713a5a",
+      "source_url": "https://github.com/l422145205-source/reelpilot/blob/ba3d650556124b206682ee2eec361148f52fb779/reports/runtime_fault_validation.json",
+      "text": "{\n  \"date\": \"2026-10-26\",\n  \"case\": {\n    \"case\": \"result_replaced_before_commit\",\n    \"fault\": \"OS hard kill\",\n    \"expiry\": \"elapsed request lease\",\n    \"lease_wait_seconds\": 0.9537455000099726,\n    \"recovery_seconds\": 0.8624342999974033,\n    \"render_commits\": 1,\n    \"uncommitted_result_served\": false,\n    \"status\": \"complete\"\n  },\n  \"coverage_notes\": [\n    \"real media, SQLite and HTTP handlers; no models loaded\",\n    \"crash recovery waits for actual request lease expiry; no manual lease SQL edit\",\n    \"deadline during FFmpeg is set to now+0.25s after startup, then expires by elapsed time\",\n    \"queued deadline expires by elapsed time without SQL edits\",\n    \"slow FFmpeg entry point is a trusted test worker; production supervisor is unchanged\",\n    \"unit tests also cover synthetic lease states and blocked model doubles\",\n    \"process-crash tests do not establish disk-power-loss atomicity or production scale\"\n  ]\n}",
+      "source": "Selected JSON fields from the pinned historical report; original file hash retained. Not a newly executed result or external-user feedback."
+    }
+  ],
+  "coverage": {
+    "range_commits": 1,
+    "included_commits": 1,
+    "changed_paths": 36,
+    "included_diffs": 2,
+    "excluded_paths": 34,
+    "truncated_diffs": 2,
+    "common_pattern_redactions": 0,
+    "net_diff_empty": false
+  },
+  "basis": "Reviewed public commit excerpts and, when present, frozen public experiment records. This editorial run renders comics; it does not rerun the source project, models or historical experiments."
+}

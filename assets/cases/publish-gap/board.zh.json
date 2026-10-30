@@ -1,0 +1,57 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "d1c230126b1dd499002dc5a87b096f82c1bde41958e79f06899fa995d9b9015d",
+  "edition": "publish-gap-zh",
+  "locale": "zh",
+  "theme": "pop",
+  "title": "文件都在了，为什么还不给下载？",
+  "subtitle": "ReelPilot / 文件落盘与任务提交之间的那道缝",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "看起来已经好了",
+      "bubble": "文件在这儿！怎么还是409？",
+      "caption": "结果文件可以先出现；这时数据库完成状态可能还没提交。",
+      "scene": "artifact",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "恰好死在缝里",
+      "bubble": "重命名之后，SQL提交之前。",
+      "caption": "故障测试在这个位置硬终止进程；SQL回滚，文件仍可能存在。",
+      "scene": "crash",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "下载先认提交",
+      "bubble": "有文件，还得有已提交的完成记录。",
+      "caption": "测试确认未提交结果返回409，不作为已完成产物提供。",
+      "scene": "gate",
+      "evidence": [
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "复用已经做好的",
+      "bubble": "验过的渲染，不必再来一遍。",
+      "caption": "历史故障记录：恢复完成，渲染提交1次。\n不代表断电原子性。",
+      "scene": "recover",
+      "evidence": [
+        "R1"
+      ],
+      "mode": "summary"
+    }
+  ]
+}

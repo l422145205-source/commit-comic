@@ -27,6 +27,8 @@ class Canvas:
         lines=[];line='';used=0
         for char in value:
             units=1 if unicodedata.east_asian_width(char) in {'W','F'} else .61
+            if used+units>width/size and char in ',.;:!?，。；：！？、）)]' and line:
+                line+=char;used+=units;continue
             if char=='\n' or used+units>width/size:
                 if char!='\n' and char.isascii() and char.isalnum() and ' ' in line and line.rfind(' ')>len(line)*.4:
                     last=line.rfind(' ');lines.append(line[:last].rstrip());line=line[last+1:]+char
@@ -121,6 +123,79 @@ def bug(c,x,y,s=1):
 
 def scene(c,kind,x,y,w,h):
     p=c.p;s=min(w/600,h/190)
+    dark='#202339'
+    if kind in {'race','snapshot','audio','reuse','artifact','gate','recover','handoff','schedule','fingerprint','audio-check','crash'}:
+        coder(c,x+8,y+24,s*.78,'worried' if kind in {'race','artifact'} else 'cheer' if kind in {'reuse','recover'} else 'happy')
+        left=x+w*.27;right=x+w*.93;span=right-left
+        if kind=='handoff':
+            c.rect(left,y+24,span*.46,118,p['green'],p['ink'],3,r=12)
+            c.text(left+15,y+44,'WORKER',21,dark,True);c.text(left+15,y+88,'complete!',23,dark)
+            xx=left+span*.58
+            c.rect(xx,y+24,span*.40,118,p['pink'],p['ink'],3,r=12)
+            c.text(xx+12,y+44,'GUARD',21,dark,True);c.text(xx+12,y+88,'BusyJob?',23,dark)
+            c.text(left+span*.48,y+68,'?!',24)
+        elif kind=='schedule':
+            for i,(label,color) in enumerate([('read',p['blue']),('finish',p['accent']),('guard',p['pink'])]):
+                xx=left+i*span/3
+                c.rect(xx,y+23,span/3-12,70,color,p['ink'],3,r=10);c.text(xx+12,y+46,label,18,dark,True)
+                if i<2:c.line([(xx+span/3-10,y+57),(xx+span/3-1,y+57)],p['ink'],4)
+            c.text(left+8,y+119,'old: BusyJob',22);c.text(left+8,y+151,'new: active → complete',19)
+        elif kind=='fingerprint':
+            for i,label in enumerate(['text','voice','model']):
+                xx=left+i*span/3;c.rect(xx,y+18,span/3-12,51,p['blue'],p['ink'],3,r=9);c.text(xx+10,y+35,label,18,dark)
+            c.line([(left+span*.5,y+77),(left+span*.5,y+101)],p['ink'],4)
+            c.rect(left+span*.13,y+109,span*.74,52,p['accent'],p['ink'],3,r=10)
+            c.text(left+span*.13+15,y+126,'take fingerprint',21,dark,True)
+        elif kind=='audio-check':
+            for i,(label,color) in enumerate([('TAKE',p['pink']),('ASR',p['blue']),('CHECK',p['green'])]):
+                xx=left+i*span/3;c.rect(xx,y+35,span/3-12,91,color,p['ink'],3,r=10);c.text(xx+12,y+70,label,18,dark,True)
+                if i<2:c.line([(xx+span/3-10,y+79),(xx+span/3-1,y+79)],p['ink'],4)
+            c.text(left+7,y+151,'independent transcription',18)
+        elif kind=='race':
+            for i,(label,color,value) in enumerate([('READ 1',p['blue'],'running'),('READ 2',p['pink'],'no lease')]):
+                xx=left+i*(span*.53)
+                c.rect(xx,y+17,span*.45,128,p['paper'],p['ink'],3,r=10)
+                c.text(xx+12,y+29,label,19);c.text(xx+12,y+77,value,18)
+            c.line([(left+span*.47,y+82),(left+span*.52,y+82)],p['ink'],5)
+            c.text(left+8,y+160,'complete → clear lease',19)
+        elif kind=='snapshot':
+            c.rect(left,y+12,span,158,p['blue'],p['ink'],3,r=12)
+            c.text(left+18,y+26,'ONE SNAPSHOT',22,dark,True)
+            for i,line in enumerate(['owner + status','lease + control','same row → decision']):c.text(left+18,y+65+i*29,line,19,dark)
+        elif kind in {'audio','reuse'}:
+            colors=[p['pink'],p['blue'],p['blue'],p['blue']]
+            for i in range(4):
+                xx=left+i*span/4;cw=span/4-9
+                c.rect(xx,y+42,cw,83,colors[i],p['ink'],3,r=9)
+                for j in range(7):
+                    amp=(11+(j*11+i*7)%25);cx=xx+13+j*(cw-26)/6
+                    c.line([(cx,y+82-amp/2),(cx,y+82+amp/2)],dark,3)
+                c.text(xx+8,y+16,f'LINE {i+1}',15)
+                c.text(xx+6,y+139,('NEW' if i==0 else 'KEEP') if kind=='reuse' else ('EDIT' if i==0 else 'same'),15)
+        elif kind in {'artifact','crash'}:
+            c.rect(left,y+20,span*.43,128,p['green'],p['ink'],3,r=10)
+            c.text(left+14,y+35,'FILE',23,dark,True);c.text(left+14,y+84,'exists',22,dark)
+            c.rect(left+span*.55,y+20,span*.43,128,p['pink'],p['ink'],3,r=10)
+            c.text(left+span*.55+14,y+35,'SQL',23,dark,True);c.text(left+span*.55+14,y+84,'pending',20,dark)
+            c.text(left+span*.46,y+69,'≠',30)
+            if kind=='crash':
+                c.poly([(left+span*.46,y+5),(left+span*.57,y+5),(left+span*.51,y+58),(left+span*.62,y+58),
+                        (left+span*.42,y+151),(left+span*.47,y+86),(left+span*.36,y+86)],p['accent'],dark,2)
+                c.text(left+span*.36,y+160,'OS kill',19)
+        elif kind=='gate':
+            c.rect(left,y+20,span*.43,128,p['pink'],p['ink'],3,r=10)
+            c.text(left+18,y+38,'HTTP',25,dark,True);c.text(left+24,y+80,'409',38,dark,True)
+            c.line([(left+span*.50,y+88),(left+span*.95,y+88)],p['ink'],5)
+            c.line([(left+span*.70,y+38),(left+span*.70,y+138)],p['pink'],12)
+            c.text(left+span*.52,y+158,'not committed yet',17)
+        else:
+            for i,(label,color) in enumerate([('verify',p['blue']),('reuse',p['green']),('commit',p['accent'])]):
+                xx=left+i*span/3
+                c.rect(xx,y+35,span/3-15,91,color,p['ink'],3,r=12)
+                c.text(xx+10,y+70,label,18,dark,True)
+                if i<2:c.line([(xx+span/3-12,y+79),(xx+span/3-2,y+79)],p['ink'],4)
+            c.text(left+4,y+156,'verified work stays useful',19)
+        return
     for i in range(9):
         c.ellipse(x+w-100+i%3*22,y+18+i//3*23,4,4,p['pink'])
     coder(c,x+28,y+22,s*.9,'worried' if kind=='duplicate' else 'cheer' if kind=='check' else 'happy')
@@ -147,7 +222,7 @@ def panel(c,row,x,y,w,h,index,packet,locale):
     p=c.p
     c.rect(x+7,y+8,w,h,p['ink'],r=15)
     c.rect(x,y,w,h,p['panel'],p['ink'],4,r=15)
-    c.rect(x+18,y+16,49,39,p['accent'],p['ink'],2,r=7);c.text(x+29,y+23,str(index+1),25,bold=True)
+    c.rect(x+18,y+16,49,39,p['accent'],p['ink'],2,r=7);c.text(x+29,y+23,str(index+1),25,fill='#202339',bold=True)
     c.wrap(x+83,y+23,row['title'],w-110,27,1)
     # A speech bubble is separate from the caption and the visual scene.
     c.rect(x+23,y+76,w-46,99,p['paper'],p['ink'],3,r=18)
@@ -169,7 +244,7 @@ def comic(packet,board,layout='grid',focus=None):
     c=Canvas(width,height,theme);p=c.p
     c.text(50,35,'CommitComic',45,bold=True)
     c.rect(width-294,40,239,42,p['blue'],p['ink'],3,r=10)
-    c.text(width-278,49,'GIT → COMIC',24,bold=True)
+    c.text(width-278,49,'GIT → COMIC',24,fill='#202339',bold=True)
     c.wrap(50,111,board['title'],width-100,42,2)
     c.wrap(53,210,board['subtitle'],width-100,24,1)
     for i,pos in enumerate(positions):
@@ -187,7 +262,9 @@ def card(packet,board):
     c.text(60,45,'CommitComic',48,bold=True)
     c.rect(60,125,1080,62,p['ink'],r=13);c.text(88,141,'FROM REAL CHANGES TO A SHAREABLE STORY',28,p['paper'],True)
     c.wrap(64,232,board['title'],1070,58,3)
-    coder(c,150,506,1.6);note(c,620,490,1.5);bug(c,874,606,.95)
+    if board['panels'][0]['scene'] in {'duplicate','inspect','repair','check'}:
+        coder(c,150,506,1.6);note(c,620,490,1.5);bug(c,874,606,.95)
+    else:scene(c,board['panels'][0]['scene'],80,525,1030,250)
     c.wrap(66,864,board['subtitle'],1060,31,2)
     c.text(67,1014,packet['base'][:8]+' → '+packet['head'][:8],28)
     c.text(67,1083,'原创漫画演绎 / 证据说明随图交付' if board['locale']=='zh' else 'Original comic interpretation / evidence notes included',23)
@@ -223,7 +300,10 @@ def render_bundle(p,b,out,images=False,font=None):
         for ref in row['evidence']:
             e=next(e for e in p['evidence'] if e['id']==ref)
             # Four-space indentation keeps arbitrary source text out of Markdown HTML/fences.
-            evidence += ['### '+ref,'',md(e.get('path',e.get('label',''))),'']+['    '+line for line in e['text'].splitlines()]+['']
+            evidence += ['### '+ref,'',md(e.get('path',e.get('label',''))),'']
+            if e.get('source_url'):evidence += ['[Pinned public source]('+e['source_url']+')','']
+            if e.get('file_sha256'):evidence += ['Source file SHA-256: `'+e['file_sha256']+'`','']
+            evidence += [md(e.get('source','')),'']+['    '+line for line in e['text'].splitlines()]+['']
     lines += ['---','','Illustrated interpretation of code evidence; review the scope and evidence notes before posting.']
     (out/'post.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
     (out/'evidence.md').write_text('\n'.join(evidence)+'\n',encoding='utf-8')

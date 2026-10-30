@@ -1,0 +1,57 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "b96fa26c221a5a7c68ed4013afde512ae576b7938d6f223464374eeeea95b93e",
+  "edition": "completion-race-en",
+  "locale": "en",
+  "theme": "pop",
+  "title": "I finished. Why am I missing?",
+  "subtitle": "ReelPilot / completion lands between two supervisor reads",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "Done, then lost?",
+      "bubble": "I finished! Why mark me lost?",
+      "caption": "The old supervisor checked completion, then ownership in a separate read.",
+      "scene": "handoff",
+      "evidence": [
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "Two reads, two states",
+      "bubble": "Running first. No lease next.",
+      "caption": "Completion clears the lease between reads. The old guard raises.",
+      "scene": "race",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "One snapshot",
+      "bubble": "Decide from the same row.",
+      "caption": "worker_state uses one row for completion and control validation.",
+      "scene": "snapshot",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "Make the race happen",
+      "bubble": "Force the timing. Then compare.",
+      "caption": "A forced transition makes the old check raise. The new check later sees completion.",
+      "scene": "schedule",
+      "evidence": [
+        "E3"
+      ],
+      "mode": "summary"
+    }
+  ]
+}

@@ -22,7 +22,7 @@ Use the original monitor character, note and bug as illustrative actors. Their d
 - **Technical lesson**: a minimal before/after example, the governing concept and its limits.
 - **Bilingual share**: adapt the sentence lengths for each layout. Keep the same source packet; don't add stronger claims in translation.
 
-Palette choices are `pop` and `night`; the helper includes four original scene types. These are deterministic vector templates, not an image model generating arbitrary scenes. Custom art can be created with a host's appropriate visual tools when requested, while preserving source review and truthful captions.
+Palette choices are `pop` and `night`. Match scenes to the actual story: `handoff/race/snapshot/schedule` for state observation, `audio/fingerprint/audio-check/reuse` for incremental audio work, and `artifact/crash/gate/recover` for publication boundaries; `duplicate/inspect/repair/check` remain general introductory options. These are deterministic vector templates, not an image model generating arbitrary scenes. Custom art can be created with a host's appropriate visual tools when requested, while preserving source review and truthful captions.
 
 ## A quick editorial review
 

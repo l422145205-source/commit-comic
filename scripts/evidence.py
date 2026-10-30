@@ -13,6 +13,8 @@ import unicodedata
 from urllib.parse import urlparse
 
 FORMAT='commit-comic/1'
+SCENES={'duplicate','inspect','repair','check','race','snapshot','audio','reuse','artifact','gate','recover',
+        'handoff','schedule','fingerprint','audio-check','crash'}
 MAX_FILE=240_000
 MAX_PACKET=3_000_000
 SHA=re.compile(r'[0-9a-f]{40}|[0-9a-f]{64}')
@@ -193,9 +195,22 @@ def validate_packet(p):
         ident(e['id'])
         if e['id'] in seen:raise ValueError('Duplicate evidence ID')
         seen.add(e['id']);text(e['text'],15000)
-        if e['kind'] not in {'net_diff','check'}:raise ValueError('Unknown evidence kind')
+        if e['kind'] not in {'net_diff','check','record'}:raise ValueError('Unknown evidence kind')
+        if e.get('source_url'):
+            u=urlparse(e['source_url'])
+            if u.scheme!='https' or u.netloc!='github.com' or u.query or u.fragment:
+                raise ValueError('Source URL must be a plain GitHub source link')
+            root=p.get('project_url')
+            if not root or not e['source_url'].startswith(root+'/'):
+                raise ValueError('Source URL must belong to the selected project')
+            if not re.fullmatch(r'/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/(?:blob|commit)/[0-9a-f]{40}(?:/[A-Za-z0-9_./-]+)?',u.path):
+                raise ValueError('Source URL must pin a commit or file to a full SHA')
         if e['kind']=='net_diff':
             if e['base']!=p['base'] or e['head']!=p['head'] or not safe_path(e['path']):raise ValueError('Diff outside packet range')
+        elif e['kind']=='record':
+            if e['ref']!=p['head'] or not safe_path(e['path']) or not e.get('source_url'):
+                raise ValueError('Frozen record needs a safe path and pinned source at packet head')
+            if not re.fullmatch(r'[0-9a-f]{64}',e['file_sha256']):raise ValueError('Invalid source-file hash')
         else:
             text(e['label'],80)
             if e['status'] not in {'passed','failed','unknown'}:raise ValueError('Unknown check status')
@@ -238,7 +253,7 @@ def validate_board(p,b):
     for index,panel in enumerate(b['panels']):
         if panel['beat']!=['problem','clue','change','result'][index]:raise ValueError('Use problem, clue, change, result in order')
         text(panel['title'],40);text(panel['bubble'],100);text(panel['caption'],180)
-        if panel.get('scene') not in {'duplicate','inspect','repair','check'}:raise ValueError('Unknown original scene')
+        if panel.get('scene') not in SCENES:raise ValueError('Unknown original scene')
         refs=panel['evidence']
         if not isinstance(refs,list) or not refs or any(e not in known for e in refs):raise ValueError('Each panel needs existing evidence references')
         if panel.get('mode','summary') not in {'summary','quote','check'}:raise ValueError('Unknown claim mode')

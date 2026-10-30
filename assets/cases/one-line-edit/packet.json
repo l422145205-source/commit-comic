@@ -1,0 +1,49 @@
+{
+  "format": "commit-comic/1",
+  "project": "voxstage",
+  "project_url": "https://github.com/l422145205-source/voxstage",
+  "repository_id": "3b8afbc0f5bb5f50bbefecbc7ed5c463c32369cf8c5fa577af9b622860de0539",
+  "base": "f66d4b84097ef6369eea619f63dbca2b4a95aeba",
+  "head": "0e8443a8e3486215a91198e4b2beb4ec6525f792",
+  "commits": [
+    {
+      "sha": "0e8443a8e3486215a91198e4b2beb4ec6525f792",
+      "subject": "Build VoxStage dialogue production agent with real TTS-ASR evidence and local studio"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "net_diff",
+      "path": "src/voxstage/director.py",
+      "status": "A",
+      "base": "f66d4b84097ef6369eea619f63dbca2b4a95aeba",
+      "head": "0e8443a8e3486215a91198e4b2beb4ec6525f792",
+      "text": "+    def take(self,scene,cue,speaker,attempt,previous_issues):\n+        instruction=INSTRUCTIONS[cue.tone]\n+        if attempt>1:\n+            if previous_issues==['duration_overflow']:\n+                instruction+=' 语速快一些，保持吐字清楚。Speak faster while remaining clear.'\n+            else:\n+                instruction+=' 逐字清晰朗读，不漏字、不重复。Articulate every word clearly without omissions or repetitions.'\n+        seed=(scene.seed+attempt*1009+int(key(cue.id)[:6],16))%(2**31-1)\n+        parameters={'text':cue.spoken,'language':cue.language,'speaker':speaker,'instruct':instruction,'seed':seed}\n+        take_key=key({'version':1,'backend':self.backend.identity,**parameters})\n+        folder=self.cache/'tts'/take_key; raw=folder/'raw.wav';meta=folder/'take.json'\n+        folder.mkdir(parents=True,exist_ok=True)\n+        with exclusive(folder/'take.lock'):\n+            cached=None\n+            if meta.exists() and raw.exists():\n+                candidate=json.loads(meta.read_text(encoding='utf-8'))\n+                if candidate.get('sha256')==audio.digest(raw):cached=candidate\n+            if cached is None:\n+                self.event('synthesize',cue_id=cue.id,attempt=attempt)\n+                self.stats['tts_calls']+=1\n+                result=self.backend.synthesize(**parameters,output=raw)\n+                signal=audio.analyze(raw)\n+                cached={'take_key':take_key,'sha256':signal['sha256'],'parameters':parameters,'synthesis':result}\n+                atomic_json(meta,cached)\n+            else:\n+                self.stats['tts_cache_hits']+=1;self.event('reuse_take',cue_id=cue.id,attempt=attempt)\n+        self.event('verify_content',cue_id=cue.id,attempt=attempt)\n+        signal=audio.analyze(raw)\n+        transcript=self.transcribe(raw,cue.language)\n+        content=compare(cue.spoken,transcript['text'])\n+        issues=diagnose(cue,scene.policy,signal,content)\n+        result={'take_key':take_key,'cue_id':cue.id,'attempt':attempt,'raw_signal':signal,\n+            'asr':transcript,'content':content,'issues':issues,'parameters':parameters}\n+        if not issues:\n+            fit_key=key({'version':1,'take_sha256':signal['sha256'],'capacity':cue.capacity,\n+                         'max_speedup':scene.policy.max_speedup})\n+            fitted=folder/(fit_key+'.wav')\n+            try:\n+                with exclusive(folder/(fit_key+'.lock')):\n+                    transform=audio.speed_fit(raw,fitted,cue.capacity,scene.policy.max_speedup)\n+                    final_signal=audio.analyze(fitted)\n+                    final_asr=self.transcribe(fitted,cue.language)\n+                    final_content=compare(cue.spoken,final_asr['text'])\n+                    issues=diagnose(cue,scene.policy,final_signal,final_content)\n+                    if final_signal['duration']>cue.capacity+1/audio.RATE:issues.append('final_duration_overflow')\n+            except ValueError as exc:\n+                result.update(issues=['transform_not_feasible'],transform_error=str(exc))\n+                return result\n+            result.update(transform=transform,final_signal=final_signal,final_asr=final_asr,\n+                          final_content=final_content,issues=issues,path=str(fitted),sha256=final_signal['sha256'])\n+        return result\n+\n+    def run(self,scene,*,interrupt_after_cue=None):\n+        scene=Scene.model_validate(scene.model_dump(mode='json') if isinstance(scene,Scene) else scene)\n+        fingerprint=key({'version':1,'scene':scene.model_dump(mode='json'),'backend':self.backend.identity})\n+        folder=self.root/'data/runs'/(scene.id+'-'+fingerprint[:16])\n+        folder.mkdir(parents=True,exist_ok=True)\n+        with exclusive(folder/'scene.lock'):\n+            return self._run(scene,folder,fingerprint,interrupt_after_cue)\n+\n+    def _run(self,scene,folder,fingerprint,interrupt_after_cue):\n+        started=time.perf_counter();self.stats={k:0 for k in self.stats}\n+        atomic_json(folder/'scene.json',scene.model_dump(mode='json'))\n+        cast={c.id:c.speaker for c in scene.cast};accepted={};records=[];rejected=[]\n+        for cue in scene.cues:\n+            issues=[]\n+            for attempt in range(1,scene.policy.max_attempts+1):\n+                result=self.take(scene,cue,cast[cue.character],attempt,issues)\n+                issues=result['issues'];decision=decide(cue,issues,attempt,scene.policy.max_attempts)\n+                result['decision']=decision.model_dump();records.append(result)\n+                atomic_json(folder/'takes.json',records)\n+                self.event('decision',cue_id=cue.id,attempt=attempt,**decision.model_dump(exclude={'cue_id'}))\n+                if decision.action=='accept':accepted[cue.id]=result;break\n+                if decision.action=='reject':rejected.append(cue.id);break\n+            if interrupt_after_cue==cue.id:\n+                raise RuntimeError('controlled interruption after cue '+cue.id)\n+        result={'scene_id':scene.id,'run_id':folder.name,'request_fingerprint':fingerprint,\n+            'backend':self.backend.label,'backend_identity':self.backend.identity,\n+            'status':'needs_review' if rejected else 'complete','rejected_cues':rejected,\n+            'accepted_cues':list(accepted),'stats':self.stats.copy(),\n+            'elapsed_seconds':time.perf_counter()-started,\n+            'subjective_quality':'style, acting and naturalness require human listening',\n+            'takes':records}\n+        if not rejected:\n+            result['export']=audio.export_scene(scene,accepted,folder/'export')\n+        atomic_json(folder/'result.json',result)\n+        self.event('finished',run_id=folder.name,status=result['status'])\n+        return result",
+      "truncated": true,
+      "source_url": "https://github.com/l422145205-source/voxstage/commit/0e8443a8e3486215a91198e4b2beb4ec6525f792",
+      "source": "Reviewed excerpt of a public GitHub parent-to-commit diff. Selected files only; no new execution implied."
+    },
+    {
+      "id": "R1",
+      "kind": "record",
+      "path": "reports/production_pilot.json",
+      "ref": "0e8443a8e3486215a91198e4b2beb4ec6525f792",
+      "file_sha256": "1765b6ea254d643798349b184930e071cbbc49a22027e47641e94e2e27d0d5f8",
+      "source_url": "https://github.com/l422145205-source/voxstage/blob/0e8443a8e3486215a91198e4b2beb4ec6525f792/reports/production_pilot.json",
+      "text": "{\n  \"selection\": \"showcases[spaceport].one_line_edit\",\n  \"changed_cue_ids\": [\n    \"s01\"\n  ],\n  \"stats\": {\n    \"tts_calls\": 1,\n    \"asr_calls\": 1,\n    \"tts_cache_hits\": 3,\n    \"asr_cache_hits\": 7\n  },\n  \"status\": \"complete\",\n  \"accepted_cues\": [\n    \"s01\",\n    \"s02\",\n    \"s03\",\n    \"s04\"\n  ],\n  \"scope\": \"ASR-based content and deterministic timing/acoustic checks only. No human MOS, emotion accuracy, speaker similarity, fine-tuning or production traffic claims.\"\n}",
+      "source": "Selected JSON fields from the pinned historical report; original file hash retained. Not a newly executed result or external-user feedback."
+    }
+  ],
+  "coverage": {
+    "range_commits": 1,
+    "included_commits": 1,
+    "changed_paths": 77,
+    "included_diffs": 1,
+    "excluded_paths": 76,
+    "truncated_diffs": 1,
+    "common_pattern_redactions": 0,
+    "net_diff_empty": false
+  },
+  "basis": "Reviewed public commit excerpts and, when present, frozen public experiment records. This editorial run renders comics; it does not rerun the source project, models or historical experiments."
+}

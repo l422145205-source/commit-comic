@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="CommitComic">
+<rect x="0" y="0" width="1200" height="1200" rx="0" fill="#FFF4D4" stroke="none" stroke-width="0"/>
+<text x="60" y="85.8" font-size="48" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">CommitComic</text>
+<rect x="60" y="125" width="1080" height="62" rx="13" fill="#202339" stroke="none" stroke-width="3"/>
+<text x="88" y="164.8" font-size="28" fill="#FFF4D4" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">FROM REAL CHANGES TO A SHAREABLE STORY</text>
+<text x="64" y="281.3" font-size="58" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">活干完了，我怎么反而掉线了？</text>
+<rect x="115.71052631578948" y="653.6842105263158" width="84.15789473684211" height="43.10526315789474" rx="10" fill="#9DDAE2" stroke="#202339" stroke-width="4"/>
+<polyline points="138.28947368421052,696.7894736842105 132.13157894736844,724.5" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="177.28947368421052,696.7894736842105 184.47368421052633,724.5" fill="none" stroke="#202339" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="115.71052631578948,664.9736842105264 93.13157894736842,686.5263157894738" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="199.8684210526316,664.9736842105264 230.6578947368421,642.3947368421053" fill="none" stroke="#202339" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="88" y="549" width="138.55263157894737" height="107.76315789473685" rx="12" fill="#202339" stroke="#202339" stroke-width="4"/>
+<rect x="98.26315789473685" y="559.2631578947369" width="118.0263157894737" height="83.13157894736842" rx="7" fill="#9DDAE2" stroke="#202339" stroke-width="2"/>
+<ellipse cx="128.02631578947367" cy="594.671052631579" rx="5.131578947368421" ry="7.697368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<ellipse cx="186.52631578947367" cy="594.671052631579" rx="5.131578947368421" ry="7.697368421052632" fill="#202339" stroke="none" stroke-width="3"/>
+<polyline points="138.28947368421052,616.7368421052631 157.78947368421052,623.921052631579 177.28947368421052,616.7368421052631" fill="none" stroke="#202339" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="358.1" y="549" width="312.708" height="118" rx="12" fill="#A8DCA9" stroke="#202339" stroke-width="3"/>
+<text x="373.1" y="586.85" font-size="21" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">WORKER</text>
+<text x="373.1" y="632.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">complete!</text>
+<rect x="752.384" y="549" width="271.92" height="118" rx="12" fill="#FFA5B5" stroke="#202339" stroke-width="3"/>
+<text x="764.384" y="586.85" font-size="21" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="700">GUARD</text>
+<text x="764.384" y="632.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">BusyJob?</text>
+<text x="684.404" y="613.4" font-size="24" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">?!</text>
+<text x="66" y="890.35" font-size="31" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">ReelPilot / 完成状态与监督检查撞在同一瞬间</text>
+<text x="67" y="1037.8" font-size="28" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">c1a0c913 → b73e0549</text>
+<text x="67" y="1102.55" font-size="23" fill="#202339" font-family="Microsoft YaHei,Noto Sans CJK SC,DejaVu Sans,sans-serif" font-weight="400">原创漫画演绎 / 证据说明随图交付</text>
+</svg>

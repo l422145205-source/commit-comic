@@ -1,0 +1,57 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "d1c230126b1dd499002dc5a87b096f82c1bde41958e79f06899fa995d9b9015d",
+  "edition": "publish-gap-en",
+  "locale": "en",
+  "theme": "pop",
+  "title": "The file exists. Why no download?",
+  "subtitle": "ReelPilot / the gap between a rename and SQL commit",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "It looks finished",
+      "bubble": "The file is here! Still HTTP 409?",
+      "caption": "A result file may exist before database completion commits.",
+      "scene": "artifact",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "Killed in the gap",
+      "bubble": "After rename. Before SQL commit.",
+      "caption": "The fault test kills the process at this point: SQL rolls back; the file can remain.",
+      "scene": "crash",
+      "evidence": [
+        "E1",
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "Serve committed work",
+      "bubble": "A file alone is not completion.",
+      "caption": "The test checks HTTP 409 for an uncommitted result instead of serving it.",
+      "scene": "gate",
+      "evidence": [
+        "E2"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "Keep verified renders",
+      "bubble": "Verified work can be reused.",
+      "caption": "The frozen fault record ends complete with 1 render commit. No power-loss atomicity claim.",
+      "scene": "recover",
+      "evidence": [
+        "R1"
+      ],
+      "mode": "summary"
+    }
+  ]
+}

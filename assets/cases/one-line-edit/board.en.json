@@ -1,0 +1,55 @@
+{
+  "format": "commit-comic/1",
+  "packet_sha256": "193a61bad00c0b46556b94da94df88ae909b6ca65ed3c1e4ecbb4b237ddc89b9",
+  "edition": "one-line-edit-en",
+  "locale": "en",
+  "theme": "pop",
+  "title": "One line changed. Spare the other three.",
+  "subtitle": "VoxStage / a recorded four-line incremental audio run",
+  "panels": [
+    {
+      "beat": "problem",
+      "title": "Another rewrite",
+      "bubble": "Change line one. Keep the rest!",
+      "caption": "Only the s01 text changed in this public four-line demonstration.",
+      "scene": "audio",
+      "evidence": [
+        "R1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "clue",
+      "title": "Fingerprint each take",
+      "bubble": "Text, voice, instructions, model.",
+      "caption": "The key includes model identity and synthesis parameters; cached audio is hash-checked.",
+      "scene": "fingerprint",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "change",
+      "title": "Redo the changed line",
+      "bubble": "Reuse three. Synthesize one.",
+      "caption": "The changed take still goes through independent ASR and configured constraints.",
+      "scene": "audio-check",
+      "evidence": [
+        "E1"
+      ],
+      "mode": "summary"
+    },
+    {
+      "beat": "result",
+      "title": "Count the actual work",
+      "bubble": "Recorded: 1 new call, 3 cache hits.",
+      "caption": "From the frozen experiment report. This comic build does not rerun the speech models.",
+      "scene": "reuse",
+      "evidence": [
+        "R1"
+      ],
+      "mode": "summary"
+    }
+  ]
+}

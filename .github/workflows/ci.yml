@@ -24,9 +24,12 @@ jobs:
       - run: python -m unittest discover -s tests -v
       - name: Reproduce original Git fixture, log, comics and ledger replay
         run: python tools/reproduce.py --out work/ci-demo --locale en --images
+      - name: Render all reviewed real-project cases without project dependencies
+        run: python tools/render_cases.py --out work/ci-cases --locale en --images
       - uses: actions/upload-artifact@v4
         with:
           name: comic-demo-${{ matrix.os }}
           path: |
             work/ci-demo/en
             work/ci-demo/verification.json
+            work/ci-cases

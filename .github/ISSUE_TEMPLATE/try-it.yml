@@ -1,0 +1,28 @@
+name: Try-out report / 试用反馈
+description: Tell us the step that worked or got in your way. 分享实际体验或卡点。
+title: "[Try-out] "
+body:
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where did you get? / 进行到哪一步？
+      options:
+        - Read the examples / 看过案例
+        - Rendered a bundled case / 生成了自带案例
+        - Tried my own change / 尝试了自己的改动
+        - Got stuck installing or running / 安装或运行卡住
+    validations:
+      required: true
+  - type: textarea
+    id: experience
+    attributes:
+      label: What happened? / 哪一步有用，哪一步卡住？
+      description: A short, public-safe description is enough. 不用提交私有代码、个人资料或完整日志。
+      placeholder: "I wanted to explain... The first step that got in the way was..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Optional environment / 可选环境
+      description: Agent host, operating system and Python version if relevant. No account details needed.

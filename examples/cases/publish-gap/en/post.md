@@ -1,0 +1,31 @@
+# The file exists. Why no download?
+
+ReelPilot / the gap between a rename and SQL commit
+
+## 1. It looks finished
+
+The file is here! Still HTTP 409?
+
+A result file may exist before database completion commits.
+
+## 2. Killed in the gap
+
+After rename. Before SQL commit.
+
+The fault test kills the process at this point: SQL rolls back; the file can remain.
+
+## 3. Serve committed work
+
+A file alone is not completion.
+
+The test checks HTTP 409 for an uncommitted result instead of serving it.
+
+## 4. Keep verified renders
+
+Verified work can be reused.
+
+The frozen fault record ends complete with 1 render commit. No power-loss atomicity claim.
+
+---
+
+Illustrated interpretation of code evidence; review the scope and evidence notes before posting.

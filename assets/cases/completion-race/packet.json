@@ -1,0 +1,63 @@
+{
+  "format": "commit-comic/1",
+  "project": "reelpilot",
+  "project_url": "https://github.com/l422145205-source/reelpilot",
+  "repository_id": "a33d98e3d7d2d74a05d8dca7192d5cc08941ef81cd4423e5428e63fec6c7b7cd",
+  "base": "c1a0c9133df2c18263df200f40c46924abdf7c57",
+  "head": "b73e054995e373de35a9d40a96ea5c86e5420a8a",
+  "commits": [
+    {
+      "sha": "b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "subject": "Fix completion-versus-supervision read race with single-snapshot control validation"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "kind": "net_diff",
+      "path": "src/reelpilot/admission.py",
+      "status": "M",
+      "base": "c1a0c9133df2c18263df200f40c46924abdf7c57",
+      "head": "b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "text": "@@ -24,6 +24,7 @@\n     guard_request,\n     terminal_status,\n     requested_error,\n+    guard_row,\n )\n \n \n@@ -190,6 +191,19 @@ def completed_by_self(self):\n             row = db.execute(\"SELECT owner,status FROM submissions WHERE job=?\", (self.job,)).fetchone()\n         return bool(row and row[\"owner\"] == self.owner and row[\"status\"] == \"complete\")\n \n+    def worker_state(self):\n+        with self.admission.journal.connect() as db:\n+            row = db.execute(\n+                \"SELECT owner,status,lease_until,cancel_requested,cancel_at,deadline \"\n+                \"FROM submissions WHERE job=?\",\n+                (self.job,),\n+            ).fetchone()\n+        if row and row[\"owner\"] == self.owner and row[\"status\"] == \"complete\":\n+            return \"complete\"\n+        self.admission.journal.runtime_check()\n+        guard_row(row, self.owner)\n+        return \"active\"\n+\n     def _update(self, status, phase, error=None):\n         now = time.time()\n         with self.admission.journal.connect() as db:",
+      "truncated": false,
+      "source_url": "https://github.com/l422145205-source/reelpilot/commit/b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "source": "Reviewed excerpt of a public GitHub parent-to-commit diff. Selected files only; no new execution implied."
+    },
+    {
+      "id": "E2",
+      "kind": "net_diff",
+      "path": "src/reelpilot/supervisor.py",
+      "status": "M",
+      "base": "c1a0c9133df2c18263df200f40c46924abdf7c57",
+      "head": "b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "text": "@@ -53,12 +53,10 @@ def run_isolated(\n \n             def check():\n                 nonlocal completed_at\n-                if ticket.completed_by_self():\n+                if ticket.worker_state() == \"complete\":\n                     completed_at = completed_at or time.monotonic()\n                     if time.monotonic() - completed_at > 5:\n                         raise TimeoutError(\"completed worker cleanup exceeded grace\")\n-                else:\n-                    ticket.guard()\n \n             code = child.wait(check=check, timeout=3605)\n             if child.stdout.total > 65536:",
+      "truncated": false,
+      "source_url": "https://github.com/l422145205-source/reelpilot/commit/b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "source": "Reviewed excerpt of a public GitHub parent-to-commit diff. Selected files only; no new execution implied."
+    },
+    {
+      "id": "E3",
+      "kind": "net_diff",
+      "path": "tests/test_runtime_control.py",
+      "status": "M",
+      "base": "c1a0c9133df2c18263df200f40c46924abdf7c57",
+      "head": "b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "text": "@@ -230,3 +230,56 @@ def test_postcommit_cleanup_error_is_observable_without_rewriting_completion(tmp\n     assert q.get(\"job\")[\"status\"] == j.get(\"job\")[\"status\"] == \"complete\"\n     event = next(e for e in j.get(\"job\")[\"events\"] if e[\"event\"] == \"postcommit_error\")\n     assert \"ProcessCleanupError\" in event[\"detail\"]\n+\n+\n+def test_supervisor_completion_race_uses_one_state_snapshot(tmp_path, monkeypatch):\n+    from contextlib import contextmanager\n+\n+    for name, legacy in [(\"legacy-peek\", True), (\"single-snapshot\", False)]:\n+        j, q, t, owner = linked(tmp_path, name)\n+        partial = j.root / (name + \".partial\")\n+        partial.write_text(\"{}\")\n+        target = j.root / (name + \".json\")\n+        original = j.connect\n+        injected = [False]\n+\n+        @contextmanager\n+        def connect():\n+            with original() as db:\n+\n+                class Proxy:\n+                    def execute(self, sql, args=()):\n+                        cursor = db.execute(sql, args)\n+                        if (\n+                            sql.startswith(\"SELECT owner,status\")\n+                            and \"FROM submissions\" in sql\n+                            and not injected[0]\n+                        ):\n+\n+                            class OneRow:\n+                                def fetchone(self):\n+                                    row = cursor.fetchone()\n+                                    injected[0] = True\n+                                    # Commit completion after the observer has read\n+                                    # its snapshot, before it validates/acts on it.\n+                                    j.finalize(name, owner, partial, target)\n+                                    return row\n+\n+                            return OneRow()\n+                        return cursor\n+\n+                    def __getattr__(self, key):\n+                        return getattr(db, key)\n+\n+                yield Proxy()\n+\n+        with monkeypatch.context() as patch:\n+            patch.setattr(j, \"connect\", connect)\n+            if legacy:\n+                assert not t.completed_by_self()\n+                with pytest.raises(BusyJob):\n+                    t.guard()  # Reproduce the old two-read bug.\n+            else:\n+                assert t.worker_state() == \"active\"\n+                assert t.worker_state() == \"complete\"\n+        assert injected[0] and q.get(name)[\"status\"] == \"complete\"",
+      "truncated": false,
+      "source_url": "https://github.com/l422145205-source/reelpilot/commit/b73e054995e373de35a9d40a96ea5c86e5420a8a",
+      "source": "Reviewed excerpt of a public GitHub parent-to-commit diff. Selected files only; no new execution implied."
+    }
+  ],
+  "coverage": {
+    "range_commits": 1,
+    "included_commits": 1,
+    "changed_paths": 9,
+    "included_diffs": 3,
+    "excluded_paths": 6,
+    "truncated_diffs": 0,
+    "common_pattern_redactions": 0,
+    "net_diff_empty": false
+  },
+  "basis": "Reviewed public commit excerpts and, when present, frozen public experiment records. This editorial run renders comics; it does not rerun the source project, models or historical experiments."
+}
