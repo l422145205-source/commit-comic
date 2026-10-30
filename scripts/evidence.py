@@ -210,6 +210,8 @@ def validate_packet(p):
         elif e['kind']=='record':
             if e['ref']!=p['head'] or not safe_path(e['path']) or not e.get('source_url'):
                 raise ValueError('Frozen record needs a safe path and pinned source at packet head')
+            if e['source_url']!=p['project_url']+'/blob/'+e['ref']+'/'+e['path']:
+                raise ValueError('Frozen record link does not match its exact file and ref')
             if not re.fullmatch(r'[0-9a-f]{64}',e['file_sha256']):raise ValueError('Invalid source-file hash')
         else:
             text(e['label'],80)

@@ -34,6 +34,8 @@ class BundledCases(unittest.TestCase):
         original=load(ROOT/'assets/cases/one-line-edit/packet.json')
         for field,value in [('ref','0'*40),('source_url','https://github.com/other/repo/blob/'+'0'*40+'/report.json'),
                             ('source_url','https://github.com/l422145205-source/voxstage/blob/main/report.json'),
+                            ('source_url','https://github.com/l422145205-source/voxstage/blob/'+'0'*40+'/reports/production_pilot.json'),
+                            ('path','reports/another.json'),
                             ('file_sha256','invalid')]:
             packet=copy.deepcopy(original);packet['evidence'][-1][field]=value
             with self.assertRaises(ValueError):validate_packet(packet)
